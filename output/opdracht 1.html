@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/1c-light.min.css"
+        integrity="sha512-kM8PiTB2J9j9MJxP4pg5Morv1nvatwpY0xsNsHDpHobti6+sdvObgLPhJ7lOIHYUqQmTAUAE+CaTcQXR47XO2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media print {
+            .pagebreak {
+                page-break-before: always;
+                margin: 20px;
+            }
+
+            @page {
+                @bottom-right {
+                    content: "Page " counter(page) " of " counter(pages);
+                }
+            }
+
+            .header {
+                position: fixed;
+            }
+
+            .footer {
+                position: fixed;
+                bottom: 0px;
+
+            }
+
+            .header-space {
+                height: 100px;
+            }
+
+            body {
+                margin: 0;
+            }
+        }
+
+        @media screen {
+            .header {
+                position: relative;
+
+            }
+
+            .footer {
+                position: relative;
+            }
+        }
+    
+        .header {
+            background-image: url("images/scratch/top.png");
+            background-size: 100% 15px;
+            background-repeat: no-repeat;
+            width: 100%;
+            min-height: 15px;
+        }
+
+        .footer {
+            background-image: url("images/scratch/bottom.png");
+            background-size: 100% 15px;
+            background-repeat: no-repeat;
+            width: 100%;
+            min-height: 15px;
+        }
+
+        .assignment-content {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        body {
+            background-image: url("images/scratch/left.png"), url("images/scratch/right.png");
+            background-size: 25px, 25px;
+            background-repeat: repeat-y, repeat-y;
+            background-position: left, right;
+            margin: 0px;
+        }
+
+        .separator {
+            background-image: url("images/scratch/separator.png");
+            background-size: 100% 10px;
+            background-repeat: no-repeat;
+            height: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .assignment-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-content">
+            <div style="padding-top: 20px; padding-left: 30px; max-height: 50px;">
+                <img src="images/logo-coderdojo-nl.png" style="width: 250px; position: relative;">
+                <img src="images/logo-zoetermeer.png" style="width: 250px; position: relative; right: 30px; float: right;">
+            </div>
+        </div>
+
+        <div style="padding-left: 30px;padding-right: 30px;">
+            <div class="separator"></div>
+        </div>
+    </div>
+
+    <table style="width: 100%;">
+        <thead>
+            <tr>
+                <th>
+                    <div class="header-space"></div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="assignment-content">
+                        <div class="assignment-title">Led Matrix</div>
+
+                        <div style="display: flex;flex-direction: row; gap: 0px 10px;">
+                            <div style="flex: 1 1 auto; border: 1px solid black;">
+                                <p><u>Voorkennis</u></p>
+                                <p>test doel</p>
+<ul>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+</ul>
+
+                            </div>
+                            <div style="flex: 1 1 auto; border: 1px solid black;">
+                                <p><u>Leerdoelen</u></p>
+                                <p>test doel</p>
+<ul>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+</ul>
+
+                            </div>
+                        </div>
+
+                        <div class="separator"></div>
+
+                        <h1>Led Matrix</h1>
+<pre><code class="language-ino"><span class="hljs-type">const</span> <span class="hljs-type">int</span> matrixSize = <span class="hljs-number">8</span>;
+<span class="hljs-type">const</span> byte colPins[matrixSize] = { <span class="hljs-number">13</span>, <span class="hljs-number">12</span>, <span class="hljs-number">11</span>, <span class="hljs-number">10</span>, <span class="hljs-number">9</span>, <span class="hljs-number">8</span>, <span class="hljs-number">7</span>, <span class="hljs-number">6</span> };
+<span class="hljs-type">const</span> byte rowPins[matrixSize] = { A0, A1, A2, A3, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+byte pattern[][matrixSize] = {
+  { <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span> },
+  { <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span> },
+  { <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span> },
+  { <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span> },
+  { <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">2</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span> },
+  { <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span> },
+  { <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">0</span>, <span class="hljs-number">4</span>, <span class="hljs-number">0</span> },
+  { <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span> },
+};
+
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> <span class="hljs-title class_">Animation</span> {
+  <span class="hljs-type">unsigned</span> <span class="hljs-type">long</span> nextTime;
+  <span class="hljs-type">int</span> step = <span class="hljs-number">0</span>;
+} Animation;
+
+
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> <span class="hljs-title class_">DisplayContext</span> {
+  <span class="hljs-type">unsigned</span> <span class="hljs-type">long</span> nextLineTime;
+  byte column = <span class="hljs-number">0</span>;
+  <span class="hljs-type">unsigned</span> <span class="hljs-type">int</span> flashCounter1 = <span class="hljs-number">0</span>;
+  <span class="hljs-type">unsigned</span> <span class="hljs-type">int</span> flashCounter2 = <span class="hljs-number">0</span>;
+  <span class="hljs-type">unsigned</span> <span class="hljs-type">int</span> flashCounter3 = <span class="hljs-number">0</span>;
+} DisplayContext;
+
+DisplayContext displayContext;
+Animation animation;
+
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> pin = <span class="hljs-number">0</span>; pin &lt; matrixSize; pin++) {
+    <span class="hljs-built_in">pinMode</span>(colPins[pin], OUTPUT);
+    <span class="hljs-built_in">pinMode</span>(rowPins[pin], OUTPUT);
+  }
+  displayContext.nextLineTime = <span class="hljs-built_in">millis</span>();
+  animation.nextTime = <span class="hljs-built_in">millis</span>();
+}
+
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">setBit</span><span class="hljs-params">(byte x, byte y, boolean value)</span> </span>{
+  pattern[y % matrixSize][x] = value;
+}
+
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">displayLoop</span><span class="hljs-params">(DisplayContext &amp;dc)</span> </span>{
+  <span class="hljs-type">unsigned</span> <span class="hljs-type">long</span> m = <span class="hljs-built_in">millis</span>();
+  <span class="hljs-keyword">if</span> (dc.nextLineTime &lt; m) {
+    dc.nextLineTime = m + <span class="hljs-number">2</span>;
+
+    <span class="hljs-built_in">digitalWrite</span>(colPins[dc.column], LOW);
+
+    dc.flashCounter1 = (dc.flashCounter1 + <span class="hljs-number">2</span>) % <span class="hljs-number">1000</span>;
+    dc.flashCounter2 = (dc.flashCounter2 + <span class="hljs-number">2</span>) % <span class="hljs-number">300</span>;
+    dc.flashCounter3 = (dc.flashCounter3 + <span class="hljs-number">2</span>) % <span class="hljs-number">6</span>;
+
+    dc.column = (dc.column + <span class="hljs-number">1</span>) % matrixSize;
+    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> r = <span class="hljs-number">0</span>; r &lt; <span class="hljs-number">8</span>; r++) {
+      byte v = pattern[r][dc.column];
+
+      <span class="hljs-keyword">switch</span> (v) {
+        <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+          <span class="hljs-built_in">digitalWrite</span>(rowPins[r], HIGH);
+          <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+          <span class="hljs-built_in">digitalWrite</span>(rowPins[r], LOW);
+          <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+          <span class="hljs-built_in">digitalWrite</span>(rowPins[r], dc.flashCounter1 &gt; <span class="hljs-number">500</span>);
+          <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+          <span class="hljs-built_in">digitalWrite</span>(rowPins[r], dc.flashCounter2 &gt; <span class="hljs-number">150</span>);
+          <span class="hljs-keyword">break</span>;
+        <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>:
+          <span class="hljs-built_in">digitalWrite</span>(rowPins[r], dc.flashCounter3 &gt; <span class="hljs-number">2</span>);
+          <span class="hljs-keyword">break</span>;
+      }
+    }
+
+    <span class="hljs-built_in">digitalWrite</span>(colPins[dc.column], HIGH);
+  }
+}
+
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-built_in">displayLoop</span>(displayContext);
+
+  <span class="hljs-keyword">if</span> (animation.nextTime &lt; <span class="hljs-built_in">millis</span>()) {
+    animation.nextTime += <span class="hljs-number">100</span>;
+
+    <span class="hljs-built_in">setBit</span>(animation.step % <span class="hljs-number">8</span>, animation.step / <span class="hljs-number">8</span>, <span class="hljs-literal">false</span>);
+    animation.step++;
+    <span class="hljs-built_in">setBit</span>(animation.step % <span class="hljs-number">8</span>, animation.step / <span class="hljs-number">8</span>, <span class="hljs-literal">true</span>);
+    animation.step %= <span class="hljs-number">64</span>;
+  }
+}
+</code></pre>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>
+                    <div class="footer-space">
+                    </div>
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
+    <div class="footer"></div>
+
+
+</body>
+
+</html>

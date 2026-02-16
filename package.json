@@ -1,0 +1,32 @@
+{
+  "name": "led_matrix",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/coderdojo-zoetermeer/arduino-led-matrix#readme",
+  "bugs": {
+    "url": "https://github.com/coderdojo-zoetermeer/arduino-led-matrix/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderdojo-zoetermeer/arduino-led-matrix.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@mdit/plugin-snippet": "^0.22.5",
+    "handlebars": "^4.7.8",
+    "highlight.js": "^11.11.1",
+    "map-stream": "^0.0.7",
+    "markdown-it": "^14.1.0",
+    "markdown-it-meta": "^0.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-watch": "^5.0.1"
+  }
+}
