@@ -12,11 +12,14 @@ byte pattern[][matrixSize] = {
   { 0, 0, 0, 0, 0, 0, 0, 0 },
 };
 
+// #region snippet
+
 typedef struct Animation {
   unsigned long nextTime;
   int step = 0;
 } Animation;
 
+// #endregion snippet
 
 typedef struct DisplayContext {
   unsigned long nextLineTime;

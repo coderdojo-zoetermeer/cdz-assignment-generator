@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" style="" viewBox="0 0 300 55" xmlns:bx="https://boxy-svg.com">
+  <path d="M 29 3 L 35.18 21.695 L 54 22.098 L 39 34.055 L 44.451 52.999 L 29 41.695 L 13.549 52.999 L 19 34.055 L 4 22.098 L 22.82 21.695 Z" bx:shape="star 29 30.639 26.287 27.639 0.4 5 1@aa3d3f61" style="stroke: rgb(0, 0, 0); fill: rgb(255, 246, 0);"/>
+  <path d="M 89 3 L 95.18 21.695 L 114 22.098 L 99 34.055 L 104.451 52.999 L 89 41.695 L 73.549 52.999 L 79 34.055 L 64 22.098 L 82.82 21.695 Z" bx:shape="star 89 30.639 26.287 27.639 0.4 5 1@ac3feb0f" style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: rgb(255, 246, 0);"/>
+  <path d="M 149 3 L 155.18 21.695 L 174 22.098 L 159 34.055 L 164.451 52.999 L 149 41.695 L 133.549 52.999 L 139 34.055 L 124 22.098 L 142.82 21.695 Z" bx:shape="star 149 30.639 26.287 27.639 0.4 5 1@f33a3f6a" style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: rgb(255, 246, 0);"/>
+  <path d="M 209 3.001 L 215.18 21.696 L 234 22.099 L 219 34.056 L 224.451 53 L 209 41.696 L 193.549 53 L 199 34.056 L 184 22.099 L 202.82 21.696 Z" bx:shape="star 209 30.64 26.287 27.639 0.4 5 1@1cb7db58" style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: rgb(255, 255, 255);"/>
+  <path d="M 269 3.001 L 275.18 21.696 L 294 22.099 L 279 34.056 L 284.451 53 L 269 41.696 L 253.549 53 L 259 34.056 L 244 22.099 L 262.82 21.696 Z" bx:shape="star 269 30.64 26.287 27.639 0.4 5 1@04d28d9f" style="stroke: rgb(0, 0, 0); stroke-width: 1; fill: rgb(255, 255, 255);"/>
+</svg>

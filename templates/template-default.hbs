@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/arduino-light.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="{{{templateAssetFolder}}}/default.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <div style="padding-top: 20px; padding-left: 30px; max-height: 50px">
+          <img
+            src="{{{templateAssetFolder}}}/logo-coderdojo-nl.png"
+            style="width: 250px; position: relative"
+          />
+          <img
+            src="{{{templateAssetFolder}}}/logo-zoetermeer.png"
+            style="width: 250px; position: relative; right: 30px; float: right"
+          />
+        </div>
+      </div>
+
+      <div style="padding-left: 30px; padding-right: 30px">
+        <div class="separator"></div>
+      </div>
+    </div>
+
+    <table style="width: 100%">
+      <thead>
+        <tr>
+          <th>
+            <div class="header-space"></div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="assignment-content">
+              <img
+                src="{{{templateAssetFolder}}}/level{{meta.level}}.svg"
+                style="width: 200px; float: right; margin-right: 0px"
+              />
+              <p class="assignment-title">{{{meta.title}}}</p>
+
+              <div style="display: flex; flex-direction: row; gap: 0px 10px">
+                {{#each meta.infoBlocks}}
+                  <div class="header-info-block">
+                    <div class="header-info-title">{{{title}}}</div>
+                    {{{renderMarkdown content}}}
+                  </div>
+                {{/each}}
+              </div>
+
+              <div class="separator-fat"></div>
+
+              {{{content}}}
+            </div>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>
+            <div class="footer-space"></div>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="footer"></div>
+  </body>
+</html>
