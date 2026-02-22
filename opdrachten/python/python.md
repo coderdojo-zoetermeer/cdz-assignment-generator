@@ -1,6 +1,7 @@
 ---
 title: Python Demo
-author: Ben Mens
+acknowledgements:
+  author(s): Ben Mens
 level: 1
 template: default
 progLang: python

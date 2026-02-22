@@ -5,6 +5,7 @@ import logger from "gulplog";
 import * as gulpfile from "../gulpfile.js";
 import fs from "fs";
 import Handlebars from "handlebars";
+import liveServer from "live-server";
 
 logger.on("info", (message) => {
   console.log(message);
@@ -28,21 +29,37 @@ program
 
 program
   .command("server")
+  .option("-p, --port <port>", "Port to run the server on", "8181")
+  .option("-n , --no-browser-open", "Do not open the browser")
   .description(
     "Builds the assignments and watches for changes and rebuilds assignments." +
       " Also starts a local server to serve the generated files.",
   )
-  .action(() => {
+  .action((args) => {
     gulpfile.server();
+
+    liveServer.start({
+      port: Number(args.port),
+      host: "0.0.0.0",
+      root: "./docs",
+      open: args.browserOpen,
+      wait: 1000,
+      logLevel: 2,
+      middleware: [
+        function (req, res, next) {
+          next();
+        },
+      ],
+    });
   });
 
 program
   .command("gen-assignment")
   .description("Generates a new assignment file")
   .requiredOption("-n, --name <name>", "Name of the assignment")
-  .action(async (a, b, c) => {
+  .action(async (args) => {
     const templatePath = `${import.meta.dirname}/../templates/assignment-template.hbs`;
-    const outputPath = `${a.name}.md`;
+    const outputPath = `${args.name}.md`;
 
     try {
       const templateContent = await fs.promises.readFile(templatePath, {

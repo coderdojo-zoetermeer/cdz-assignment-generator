@@ -1,6 +1,7 @@
 ---
 title: Arduino Blink
-author: Ben Mens
+acknowledgements:
+  author(s): Ben Mens
 level: 5
 template: default
 progLang: arduino

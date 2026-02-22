@@ -22,7 +22,6 @@ import { stylize } from "@mdit/plugin-stylize";
 import { include } from "@mdit/plugin-include";
 import { katex } from "@mdit/plugin-katex";
 import fs from "fs";
-import liveServer from "live-server";
 
 const templateDir = import.meta.dirname + "/templates";
 let assignmentMap = [];
@@ -77,7 +76,7 @@ md.use(icon, {
 });
 md.use(mark);
 const containerCloseRender = (tokens, index, options, _env, slf) =>
-    '<div class="clear-float"></div></div>';
+  '<div class="clear-float"></div></div>';
 
 md.use(container, {
   name: "challenge",
@@ -85,7 +84,7 @@ md.use(container, {
 });
 md.use(container, {
   name: "codeblock",
-  closeRender: containerCloseRender, 
+  closeRender: containerCloseRender,
 });
 md.use(container, {
   name: "read",
@@ -303,26 +302,10 @@ function watchTask(cb) {
   watch("opdrachten/**/*", build);
 }
 
-function serve(cb) {
-  liveServer.start({
-    port: 8181,
-    host: "0.0.0.0",
-    root: "./docs",
-    open: false,
-    wait: 1000,
-    logLevel: 2,
-    middleware: [
-      function (req, res, next) {
-        next();
-      },
-    ],
-  });
-}
-
 export const build = series(
   buildAssignments,
   copyTemplateAssets,
   copyIndexHtml,
 );
 
-export const server = series(build, parallel(watchTask, serve));
+export const server = series(build, watchTask);
