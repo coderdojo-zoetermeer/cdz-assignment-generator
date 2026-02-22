@@ -13,7 +13,9 @@ on a markdown file.
 - assignments can be printed from the web-browser and support paging.
 - support for reusable blocks that can be includes in assignments.
 
-## [Demo](https://coderdojo-zoetermeer.github.io/cdz-assignment-generator/)
+## Demo
+
+[Demo](https://coderdojo-zoetermeer.github.io/cdz-assignment-generator/)
 
 ## Install
 
