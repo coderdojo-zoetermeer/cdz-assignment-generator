@@ -1,28 +1,22 @@
 ---
-title: Led Matrix
+title: Python Demo
 author: Ben Mens
-level: 5
+level: 1
 template: default
-progLang: arduino
-theme: arduino
+progLang: python
+theme: python
 description: |
-    ddd
+    Python assignment demo
 infoBlocks:
   - title: Voorkennis
     content: | 
-      LED, if, for, functions (basis), joystick
-
+      geen
+      
   - title: Leerdoelen
     content: |
-      LED matrix, HIGH, LOW, abs, %
+      - werken met Thonny
+      
 ---
-
-********************************************************************************
-
-## Benodigdheden
-
-- iets
-- iets anders
 
 ********************************************************************************
 
@@ -30,16 +24,7 @@ infoBlocks:
 
 *Introductie*
 
-In deze opdracht ...
-:::
-
-________________________________________________________________________________
-
-::: build
-
-*Bouwen van de elektronica*
-
-...
+In deze opdracht ga je een heel eenvoudig python programma makken.
 
 :::
 
@@ -51,14 +36,7 @@ ________________________________________________________________________________
 
 ::: codeblock
 
-```c
-
-void setup() {
-}
-
-void loop() {
-}
-```
+<<<./hello.py
 
 :::
 ::::
@@ -68,5 +46,6 @@ ________________________________________________________________________________
 ::: challenge
 *Uitdaging*
 
-Probeer eens om .......
+Probeer eens om iets anders te printen.
+
 :::

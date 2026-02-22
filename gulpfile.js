@@ -25,7 +25,7 @@ import fs from "fs";
 import liveServer from "live-server";
 
 const templateDir = import.meta.dirname + "/templates";
-const assignmentMap = {};
+let assignmentMap = [];
 
 hljs.registerLanguage("c", cpp);
 hljs.registerLanguage("cpp", cpp);
@@ -76,15 +76,29 @@ md.use(icon, {
   render: fontawesomeRender,
 });
 md.use(mark);
+const containerCloseRender = (tokens, index, options, _env, slf) =>
+    '<div class="clear-float"></div></div>';
+
 md.use(container, {
   name: "challenge",
-  closeRender: (tokens, index, options, _env, slf) =>
-    '<div class="clear-float"></div></div>',
+  closeRender: containerCloseRender,
 });
-md.use(container, { name: "codeblock" });
-md.use(container, { name: "read" });
-md.use(container, { name: "build" });
-md.use(container, { name: "program" });
+md.use(container, {
+  name: "codeblock",
+  closeRender: containerCloseRender, 
+});
+md.use(container, {
+  name: "read",
+  closeRender: containerCloseRender,
+});
+md.use(container, {
+  name: "build",
+  closeRender: containerCloseRender,
+});
+md.use(container, {
+  name: "program",
+  closeRender: containerCloseRender,
+});
 md.use(demo);
 md.use(stylize, {
   config: [
@@ -195,10 +209,14 @@ function generateAssignment() {
         const targetPath = path.join(targetDir, pathInfo.name + ".html");
         await writeFile(targetPath, output);
 
-        assignmentMap[relativeTargetPath] = {
-          path: path.join(relativeTargetPath, pathInfo.name + ".html"),
+        const relativeTargetPathForMap = path.join(
+          relativeTargetPath,
+          pathInfo.name + ".html",
+        );
+        assignmentMap.push({
+          path: relativeTargetPathForMap,
           meta: { ...md.meta },
-        };
+        });
 
         // Copy used assets to the target directory
         for (const asset of env.usedAssets) {
@@ -242,6 +260,7 @@ function generateAssignment() {
 }
 
 function buildAssignments(cb) {
+  assignmentMap = [];
   const buildAssignmentsTask = vfs
     .src(["opdrachten/**/*.md"])
     .pipe(generateAssignment());
@@ -279,7 +298,7 @@ function copyTemplateAssets(cb) {
 }
 
 function watchTask(cb) {
-  watch("opdrachten/**/*", buildAssignments);
+  watch("opdrachten/**/*", build);
 }
 
 function serve(cb) {

@@ -8,3 +8,4 @@ katex
 mdit
 pagebreak
 streamx
+Thonny
