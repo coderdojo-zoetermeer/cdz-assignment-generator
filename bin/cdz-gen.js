@@ -57,6 +57,12 @@ program
   .command("gen-assignment")
   .description("Generates a new assignment file")
   .requiredOption("-n, --name <name>", "Name of the assignment")
+  .option(
+    "-p, --progLang <progLang>",
+    "Programming language for the assignment",
+    "scratch3",
+  )
+  .option("-t, --theme <theme>", "Theme for the assignment", "scratch")
   .action(async (args) => {
     const templatePath = `${import.meta.dirname}/../templates/assignment-template.hbs`;
     const outputPath = `${args.name}.md`;
@@ -66,10 +72,10 @@ program
         encoding: "utf8",
       });
       const template = Handlebars.compile(templateContent);
-      const output = template({ name: a.name });
+      const output = template({...args});
       await fs.promises.writeFile(outputPath, output);
       console.log(
-        `Assignment "${a.name}" generated successfully at ${outputPath}`,
+        `Assignment "${args.name}" generated successfully at ${outputPath}`,
       );
     } catch (e) {
       logger.error(e);
