@@ -20,7 +20,7 @@
   }
 
   .header-space {
-    height: 100px;
+    height: 110px;
   }
 
   body {
@@ -48,7 +48,6 @@
   .language-logo {
     position: absolute;
     margin-top: 5px;
-    /* width: 300px; */
     max-width: 30%;
     max-height: 100px;
     aspect-ratio: initial;
@@ -166,6 +165,7 @@ table {
   border: 1px solid gray;
   box-shadow: 3px 3px;
   padding: 20px;
+  page-break-inside: avoid;
 }
 
 .read::before,
@@ -207,4 +207,31 @@ hr.separator-hidden {
 .acknowledgements {
   margin-top: 20px;
   font-size: 12px;
+}
+
+.tabs-tab-content {
+  display: none;
+}
+.tabs-tab-content.active {
+  display: block;
+}
+
+.tabs-tabs-header {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tabs-tab-button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tabs-tab-button.active {
+  background-color: #ccc;
 }

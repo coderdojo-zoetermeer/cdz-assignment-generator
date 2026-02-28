@@ -30,15 +30,15 @@
     "@mdit/plugin-mark": "^0.22.2",
     "@mdit/plugin-snippet": "^0.22.5",
     "@mdit/plugin-stylize": "^0.22.4",
+    "@mdit/plugin-tab": "^0.24.0",
     "@mdit/plugin-uml": "^0.23.1",
     "commander": "^14.0.3",
+    "gulp": "^5.0.1",
     "handlebars": "^4.7.8",
     "highlight.js": "^11.11.1",
     "live-server": "^1.2.2",
     "markdown-it": "^14.1.0",
     "markdown-it-attrs": "^4.3.1",
-    "markdown-it-meta": "^0.0.1",
-    "gulp": "^5.0.1"
-  },
-  "devDependencies": {}
+    "markdown-it-meta": "^0.0.1"
+  }
 }

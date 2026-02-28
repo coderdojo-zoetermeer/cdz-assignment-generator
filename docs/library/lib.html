@@ -122,182 +122,114 @@
         <tr>
           <td>
             <div class="assignment-content">
-              <p class="assignment-title">Maken van coderdojo opdrachten met de cdz-assignment-generator</p>
+              <p class="assignment-title">Overzicht van herbruikbare opdrachtblokken</p>
 
               <div style="display: flex; flex-direction: row; gap: 0px 10px">
               </div>
 
               <hr class="separator-fat">
+<h1>Functies</h1>
+<h2>Algemeen</h2>
+<h2>&lt;!-- @include: global-lib/explain-function.md#uitleg --&gt;</h2>
 <div class="read">
-<p><em>Introductie</em></p>
-<p>In deze opdracht wordt uitgelegd hoe je met de cdz-assignment-generator
-CoderDojo opdrachten kan maken.</p>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>Over markdown</em></p>
-<p>Markdown is een eenvoudige opmaaktaal waarmee je tekst kunt structureren en
-opmaken met simpele tekens. Het wordt veel gebruikt voor documentatie,
-README-bestanden (bijvoorbeeld op GitHub), forums en notities.</p>
-<p>Het idee: je schrijft gewone tekst met een paar speciale symbolen, en die
-worden omgezet naar mooi opgemaakte tekst (vaak HTML).</p>
-<p>(bron: ChatGPT, prompt: &quot;Wat is markdown?&quot;)</p>
-<p>Zie ook:</p>
+<p>Een functie is en groep van instructies die samen een taak uitvoeren. Je kan
+functies gebruiken om je programma in kleinere stukjes op te hakken zodat het
+makkelijker is om te lezen. Ook zijn functies handig als je dezelfde groep
+instructies op meerdere plaatsen in je programma nodig hebt.</p>
+<p><em>Voorbeeld</em></p>
+<p>Stel dat je een programma maakt om je huiswerk te maken. Je zou dan de volgende
+functies kunnen maken:</p>
 <ul>
-<li><a href="https://www.markdownguide.org/">Markdown Guide</a>{target=_blank}</li>
-<li><a href="https://www.markdownguide.org/cheat-sheet/">Cheat sheet</a>{target=_blank}</li>
+<li><code>zoek_huiswerk_in_agenda</code></li>
+<li><code>maak_rekenen_huiswerk</code></li>
+<li><code>maak_taal_huiswerk</code></li>
 </ul>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>Over cdz-assignment-generator</em></p>
-<p>De CDZ assignment generator is een tool waarmee markdown bestanden eenvoudig
-kunnen worden omgezet naar CoderDojo opdrachten in HTML.</p>
-<p>Vaak voorkomende blokken kunnen in een bibliotheek worden gezet zodat ze in
-meerdere opdrachten kunnen worden gebruikt.</p>
-<p>Deze gegenereerde
-HTML bestanden zijn geschikt op te kunnen printen over meerdere pagina's. Met
-de text *pagebreak* kan je ervoor zorgen dat de volgende sectie op een nieuwe
-pagina begint.</p>
-<h2>voorbeeld</h2>
-<ul>
-<li><a href="https://raw.githubusercontent.com/coderdojo-zoetermeer/cdz-assignment-generator/refs/heads/main/opdrachten/scratch/scratch.md">markdown</a>{target=_blank}</li>
-<li><a href="https://coderdojo-zoetermeer.github.io/cdz-assignment-generator/scratch/scratch.html">HTML</a>{target=_blank}</li>
-</ul>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>Over blokken</em></p>
-<p>Hieronder worden de blokken verder uitgelegd.</p>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>read-blok uitleg</em></p>
-<p>Een read-blok is een blokje text waarin uitleg wordt aan de leerling. Probeer
-deze blokjes klein te houden en begin elk blokje met een kopje waaruit
-duidelijk wordt wat er wordt uitgelegd, zodat de leerling kan bepalen of
-leerling het blokje moet lezen of hen het wil lezen.</p>
-<details><summary>Demo</summary>
-<pre><code class="language-md">::: read
-
-_Titel read blok_
-
-Tekst Read blok.
-
-:::
+<p>Je programma wordt dan als volgt:</p>
+<p>Programmeer wat er moet worden gedaan voor de functie
+<code>maak_rekenen_huiswerk</code>. Het stukje <code>(hoofdstuk)</code> geeft
+aan dat de functie extra informatie nodig heeft over wat gedaan moet worden.</p>
+<div class="codeblock">
+<pre><code class="language-text">functie maak_rekenen_huiswerk(hoofdstuk):
+    pak boek
+    zoek hoofdstuk op
+    pak papier
+    maak sommen
+    ...
 </code></pre>
-<div class="demo-content">
+<div class="clear-float"></div></div><p>Programmeer wat er moet worden gedaan om taalhuiswerk te maken.</p>
+<div class="codeblock">
+<pre><code class="language-text">functie maak_taal_huiswerk(hoofdstuk):
+    pak boek
+    zoek hoofdstuk op
+    leer woordjes
+    ...
+</code></pre>
+<div class="clear-float"></div></div><p>Programmeer wat er moet worden gedaan om in je agenda te zoeken. Het resultaat
+van de functie is een lijst van alle opdrachten die op de opgegeven datum
+moeten worden gemaakt.</p>
+<div class="codeblock">
+<pre><code class="language-text">functie zoek_huiswerk_in_agenda(datum):
+    pak agenda
+    zoek datum op
+
+    resultaat -&gt; lijst_met_opdrachten
+</code></pre>
+<div class="clear-float"></div></div><p>Voer alle functies in de juiste volgorde uit.</p>
+<div class="codeblock">
+<pre><code class="language-text">zoek_huiswerk_in_agenda(vandaag):
+    voor elke opdracht:
+        als soort is &quot;rekenen&quot;:
+            maak_rekenen_huiswerk(hoofdstuk)
+        als soort is &quot;taal&quot;:
+            maak_taal_huiswerk(hoofdstuk)
+
+</code></pre>
+<div class="clear-float"></div></div><div class="clear-float"></div></div><h2>Voorbeelden voor het maken van een functie</h2>
+<div class="tabs-tabs-wrapper" data-id="Functies">
+  <div class="tabs-tabs-header">
+    <button type="button" class="tabs-tab-button active" data-tab="0" data-id="scratch" data-active>scratch</button>
+    <button type="button" class="tabs-tab-button" data-tab="1" data-id="arduino">arduino</button>
+    <button type="button" class="tabs-tab-button" data-tab="2" data-id="python">python</button>
+  </div>
+  <div class="tabs-tabs-container">
+<div class="tabs-tab-content active" data-index="0" data-id="scratch" data-active="">
+<h2>&lt;!-- @include: global-lib/explain-function.md#voorbeeld-scratch --&gt;</h2>
 <div class="read">
-<p><em>Titel read blok</em></p>
-<p>Tekst Read blok.</p>
+<p><em>Voorbeeld [Mijn blokken]</em></p>
+<p><mark>TODO</mark></p>
 <div class="clear-float"></div></div></div>
-</details>
-<div class="clear-float"></div></div><hr class="separator-thin">
+<div class="tabs-tab-content" data-index="1" data-id="arduino">
+<h2>&lt;!-- @include: global-lib/explain-function.md#voorbeeld-arduino --&gt;</h2>
 <div class="read">
-<p><em>programmeer-blok uitleg</em></p>
-<p>Een programmeer-blok wordt gebruik om aan te duiden dat de leerling iets moet
-programmeren. In programmeerblokken kan je stukjes code toevoegen. Deze worden
-automatisch opgemaakt met syntax highlights.</p>
-<details><summary>Demo</summary>
-<pre><code class="language-md">::: program
+<p><em>Voorbeeld functies</em></p>
+<p>Voorbeeld:</p>
+<pre><code class="language-c"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">doeIets</span><span class="hljs-params">()</span> </span>{
 
-_Titel programmeer blok_
-
-Tekst programmeerblok.
-
-```py
-
-print('Hello world!')
-
-```
-
-:::
-</code></pre>
-<div class="demo-content">
-<div class="program">
-<p><em>Titel programmeer blok</em></p>
-<p>Tekst programmeerblok.</p>
-<pre><code class="language-py">
-<span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;Hello world!&#x27;</span>)
-
+}
 </code></pre>
 <div class="clear-float"></div></div></div>
-</details>
-<div class="clear-float"></div></div><hr class="separator-thin">
+<div class="tabs-tab-content" data-index="2" data-id="python">
+<h2>&lt;!-- @include: global-lib/explain-function.md#voorbeeld-python --&gt;</h2>
 <div class="read">
-<p><em>build-blok uitleg</em></p>
-<p>Een build wordt gebruikt om aan te duiden dat de leering iets moet doen. Dit
-is met name van toepassing voor Arduino opdrachten. bijvoorbeeld voor het
-bouwen van een elektronische schakeling.</p>
-<details><summary>Demo</summary>
-<pre><code class="language-md">::: build
-
-_Titel build blok_
-
-Tekst build-blok.
-
-:::
+<p><em>Voorbeeld functies</em></p>
+<p>Voorbeeld:</p>
+<pre><code class="language-py"><span class="hljs-keyword">def</span> <span class="hljs-title function_">doeIets</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;hallo!&#x27;</span>)
 </code></pre>
-<div class="demo-content">
-<div class="build">
-<p><em>Titel build blok</em></p>
-<p>Tekst build-blok.</p>
 <div class="clear-float"></div></div></div>
-</details>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>gebruik van images</em></p>
-<p>Je kan eenvoudig plaatjes aan blokken toevoegen. Ook is het mogelijk plaatjes
-naar links of rechts te laten &quot;floaten&quot; zodat de tekst er automatisch omheen
-wordt weergegeven. De plaatjes kan je ergens in de directory structuur van
-de opdracht plaatsen. Linken naar plaatjes die online staan is ook mogelijk.</p>
-<p>Met het element *clear-float* kan je ervoor zorgen dat de tekst erna weer
-onder het plaatje wordt weergegeven en dus niet ernaast.
-(Zie ook: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/clear">CSS</a>)</p>
-<details><summary>Plaatjes</summary>
-<pre><code class="language-md">---
-
-![Arduino](assets/schema.svg){.float-right}
-Het plaatje hiernaast wordt met de style float-right weergegeven.
-
----
-
-_clear-float_
-
-![Arduino](assets/schema.svg){.float-left}
-Het plaatje hiernaast wordt met de style float-left weergegeven.
-
----
-
-_clear-float_
-
-Het plaatje hieronder wordt zonder float weergegeven.
-
-![Arduino](assets/schema.svg)
-
-_clear-float_
-</code></pre>
-<div class="demo-content">
-<hr class="separator-thin">
-<p><img src="assets/schema.svg" alt="" class="float-right">
-Het plaatje hiernaast wordt met de style float-right weergegeven.</p>
-<hr class="separator-thin">
-<p><div class="clear-float"></div></p>
-<p><img src="assets/schema.svg" alt="" class="float-left">
-Het plaatje hiernaast wordt met de style float-left weergegeven.</p>
-<hr class="separator-thin">
-<p><div class="clear-float"></div></p>
-<p>Het plaatje hieronder wordt zonder float weergegeven.</p>
-<p><img src="assets/schema.svg" alt=""></p>
-<p><div class="clear-float"></div></p>
+  </div>
 </div>
-</details>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>verwijzen naar standaard opdracht blokken</em></p>
-<p>Vaak voorkomende elementen kunnen in een bibliotheek worden beheerd zodat ze
-eenvoudig kunnen worden hergebruikt. Hieronder een voorbeeld van het gebruik
-van het standaard element voor de uitleg van de modulo functie. Hier kan zelfs
-worden aangegeven in welke programmeertaal de uitleg moet worden gegeven.</p>
-<pre><code class="language-md"> &lt;!-- @include: global-lib/explain-mod.md#scratch --&gt;
-</code></pre>
-<p>wordt in Scratch:</p>
+<hr class="separator-fat">
+<h1>Modulo functie</h1>
+<div class="tabs-tabs-wrapper" data-id="Functies">
+  <div class="tabs-tabs-header">
+    <button type="button" class="tabs-tab-button active" data-tab="0" data-id="scratch" data-active>scratch</button>
+    <button type="button" class="tabs-tab-button" data-tab="1" data-id="arduino">arduino</button>
+    <button type="button" class="tabs-tab-button" data-tab="2" data-id="python">python</button>
+  </div>
+  <div class="tabs-tabs-container">
+<div class="tabs-tab-content active" data-index="0" data-id="scratch" data-active="">
+<h2>&lt;!-- @include: global-lib/explain-mod.md#scratch --&gt;</h2>
 <div class="read">
 <p><em>Uitleg modulo functie</em></p>
 <p>De modulo functie geeft de restwaarde van een <em>gedeeld door</em> som met gehele
@@ -308,9 +240,9 @@ krijgt dan 3 snoepjes, en er blijft er dan 1 over.</p>
 <p>Voorbeeld:</p>
 <p><img src="./global-lib-assets/modulo-scratch-example.svg" alt=""></p>
 <p>De variabele met de naam <em>rest</em> heeft nu de waarde 1.</p>
-<div class="clear-float"></div></div><p>voor arduino:</p>
-<pre><code class="language-md"> &lt;!-- @include: global-lib/explain-mod.md#arduino --&gt;
-</code></pre>
+<div class="clear-float"></div></div></div>
+<div class="tabs-tab-content" data-index="1" data-id="arduino">
+<h2>&lt;!-- @include: global-lib/explain-mod.md#arduino --&gt;</h2>
 <div class="read">
 <p><em>Uitleg modulo functie</em></p>
 <p>De modulo functie geeft de restwaarde van een <em>gedeeld door</em> som met gehele
@@ -322,7 +254,24 @@ krijgt dan 3 snoepjes, en er blijft er dan 1 over.</p>
 <p>Voorbeeld:</p>
 <pre><code class="language-c">    integer rest = <span class="hljs-number">13</span> % <span class="hljs-number">4</span>; <span class="hljs-comment">// De waarde van rest wordt 1</span>
 </code></pre>
-<div class="clear-float"></div></div><div class="clear-float"></div></div>
+<div class="clear-float"></div></div></div>
+<div class="tabs-tab-content" data-index="2" data-id="python">
+<h2>&lt;!-- @include: global-lib/explain-mod.md#python --&gt;</h2>
+<div class="read">
+<p><em>Uitleg modulo functie</em></p>
+<p>De modulo functie geeft de restwaarde van een <em>gedeeld door</em> som met gehele
+getallen.</p>
+<p>Bijvoorbeeld: Stel dat je 13 snoepjes wil verdelen over 4 vrienden. Iedereen
+krijgt dan 3 snoepjes, en er blijft er dan 1 over.</p>
+<p>Dus <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>3</mn><mspace width="0.5em"/><mi>r</mi><mi>e</mi><mi>s</mi><mi>t</mi><mspace width="0.5em"/><mn>1</mn></mrow><annotation encoding="application/x-tex">13/4 = 3\enspace rest\enspace 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">13/4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.5em;"></span><span class="mord mathnormal">res</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.5em;"></span><span class="mord">1</span></span></span></span></p>
+<p>In python schrijf je de modulo functie als een <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">%</span></span></span></span>-teken.</p>
+<p>Voorbeeld:</p>
+<pre><code class="language-py">    rest = <span class="hljs-number">13</span> % <span class="hljs-number">4</span> <span class="hljs-comment"># De waarde van rest wordt 1</span>
+</code></pre>
+<div class="clear-float"></div></div></div>
+  </div>
+</div>
+
 
               <hr>
 

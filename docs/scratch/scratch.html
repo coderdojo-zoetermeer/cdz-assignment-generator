@@ -37,7 +37,9 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      body {
+
+      @media print {
+        body {
         background-image: 
           url("../template-assets/scratch/left.svg"), 
           url("../template-assets/scratch/right.svg");
@@ -46,6 +48,20 @@
           background-position: left, right;
           margin: 0px;
         }
+      }
+
+      @media screen {
+        body {
+        background-image: 
+          url("../template-assets/scratch/left.svg"), 
+          url("../template-assets/scratch/right.svg");
+          background-size: 15px 100%, 15px 100%;
+          background-repeat: no-repeat, no-repeat;
+          background-position: left, right;
+          margin: 0px;
+        }
+      }
+      
         .header {
           background-image: url("../template-assets/scratch/top.svg");
           background-size: 100% 15px;
@@ -110,10 +126,10 @@
         <tr>
           <td>
             <div class="assignment-content">
-              <img
-                src="../template-assets/level1.svg"
-                style="width: 200px; float: right; margin-right: 0px"
-              />
+                <img
+                  src="../template-assets/level1.svg"
+                  style="width: 200px; float: right; margin-right: 0px"
+                />
               <p class="assignment-title">Scratch Demo</p>
 
               <div style="display: flex; flex-direction: row; gap: 0px 10px">
@@ -134,6 +150,7 @@
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
 <p><em>Laat CAT lopen</em></p>
+<p><img src="./assets/test.svg" alt="" width="300"></p>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="challenge">
 <p><em>Uitdaging</em></p>
@@ -216,5 +233,30 @@
     </table>
 
     <div class="footer"></div>
+
+    <script>
+      const inactive = tab => tab.classList.remove('active')
+      const active = tab => tab.classList.add('active')
+      const tabClick = tab => tab.addEventListener('click', listener)
+
+      const listener = (event) => {
+        // id for the clicked button
+        const tabId = event.target.getAttribute('data-id')
+        // the parent container's id
+        const containerId = event.target.parentElement.parentElement.getAttribute('data-id')
+        // syntax sugar for self
+        const parentQuery = `.tabs-tabs-wrapper[data-id=${containerId}]`
+
+        // Set everything in this parent container to inactive
+        document.querySelectorAll(`${parentQuery} .tabs-tab-content`).forEach(inactive)
+        document.querySelectorAll(`${parentQuery} .tabs-tabs-header button`).forEach(inactive)
+
+        // Set the tab id's items to active
+        document.querySelectorAll(`[data-id=${tabId}]`).forEach(active)
+      }
+
+      // Set it up for all my homies (multiple tabs)
+      document.querySelectorAll('.tabs-tabs-header button').forEach(tabClick)
+    </script>
   </body>
 </html>

@@ -22,6 +22,7 @@ import { stylize } from "@mdit/plugin-stylize";
 import { include } from "@mdit/plugin-include";
 import { katex } from "@mdit/plugin-katex";
 import fs from "fs";
+import { tab } from "@mdit/plugin-tab";
 
 const templateDir = import.meta.dirname + "/templates";
 let assignmentMap = [];
@@ -126,6 +127,9 @@ md.use(stylize, {
       },
     },
   ],
+});
+md.use(tab, {
+  name: "tabs",
 });
 
 const ruleProxy = (tokens, idx, options, env, self) =>
@@ -302,7 +306,7 @@ function copyTemplateAssets(cb) {
 }
 
 function watchTask(cb) {
-  watch("opdrachten/**/*", build);
+  watch(["opdrachten/**/*", "templates/**/*", "global-lib/**/*"], build);
 }
 
 export const build = series(

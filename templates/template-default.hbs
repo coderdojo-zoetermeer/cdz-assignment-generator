@@ -37,7 +37,9 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      body {
+
+      @media print {
+        body {
         background-image: 
           url("{{{templateAssetFolder}}}/{{{meta.theme}}}/left.svg"), 
           url("{{{templateAssetFolder}}}/{{{meta.theme}}}/right.svg");
@@ -46,6 +48,20 @@
           background-position: left, right;
           margin: 0px;
         }
+      }
+
+      @media screen {
+        body {
+        background-image: 
+          url("{{{templateAssetFolder}}}/{{{meta.theme}}}/left.svg"), 
+          url("{{{templateAssetFolder}}}/{{{meta.theme}}}/right.svg");
+          background-size: 15px 100%, 15px 100%;
+          background-repeat: no-repeat, no-repeat;
+          background-position: left, right;
+          margin: 0px;
+        }
+      }
+      
         .header {
           background-image: url("{{{templateAssetFolder}}}/{{{meta.theme}}}/top.svg");
           background-size: 100% 15px;
@@ -112,10 +128,12 @@
         <tr>
           <td>
             <div class="assignment-content">
-              <img
-                src="{{{templateAssetFolder}}}/level{{meta.level}}.svg"
-                style="width: 200px; float: right; margin-right: 0px"
-              />
+              {{#if meta.level}}
+                <img
+                  src="{{{templateAssetFolder}}}/level{{meta.level}}.svg"
+                  style="width: 200px; float: right; margin-right: 0px"
+                />
+              {{/if}}
               <p class="assignment-title">{{{meta.title}}}</p>
 
               <div style="display: flex; flex-direction: row; gap: 0px 10px">
@@ -183,7 +201,7 @@
                 <em>Acknowledgements:</em>
                 <div style="padding-left: 20px;">
                     {{#each meta.acknowledgements}}
-                      <p>{{@key}}: {{{.}}}</p>
+                      <p>{{@key}}: {{{this}}}</p>
                     {{/each}}
                     
                   <p>This document was created by CoderDojo Zoetermeer. The template
@@ -207,5 +225,30 @@
     </table>
 
     <div class="footer"></div>
+
+    <script>
+      const inactive = tab => tab.classList.remove('active')
+      const active = tab => tab.classList.add('active')
+      const tabClick = tab => tab.addEventListener('click', listener)
+
+      const listener = (event) => {
+        // id for the clicked button
+        const tabId = event.target.getAttribute('data-id')
+        // the parent container's id
+        const containerId = event.target.parentElement.parentElement.getAttribute('data-id')
+        // syntax sugar for self
+        const parentQuery = `.tabs-tabs-wrapper[data-id=${containerId}]`
+
+        // Set everything in this parent container to inactive
+        document.querySelectorAll(`${parentQuery} .tabs-tab-content`).forEach(inactive)
+        document.querySelectorAll(`${parentQuery} .tabs-tabs-header button`).forEach(inactive)
+
+        // Set the tab id's items to active
+        document.querySelectorAll(`[data-id=${tabId}]`).forEach(active)
+      }
+
+      // Set it up for all my homies (multiple tabs)
+      document.querySelectorAll('.tabs-tabs-header button').forEach(tabClick)
+    </script>
   </body>
 </html>

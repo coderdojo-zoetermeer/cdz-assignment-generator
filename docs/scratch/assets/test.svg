@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="injectionDiv" viewBox="0 0 322.4 568.5" style="filter: none;">
+  <style>
+    .blocklyText {
+        fill: #FFFFFF;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 12pt;
+        font-weight: 500;
+    }
+    .blocklyNonEditableText&gt;text, .blocklyEditableText&gt;text {
+        fill: #575E75;
+    }
+    .blocklyDropdownText {
+        fill: #FFFFFF !important;
+    }
+    </style>
+  <g data-id="sJVUM^Xj{h_E8r6zmjDW" class="blocklyDraggable blocklySelected" data-shapes="hat" data-category="control" transform="matrix(1, 0, 0, 1, 0, 16.500002)" filter="url(#blocklyStackGlowFilter9443978313927361)">
+    <path class="blocklyPath blocklyBlockBackground" stroke="#CF8B17" fill="#FFAB19" fill-opacity="1" d="m 0,0 c 25,-22 71,-22 96,0 H 200.53009033203125 a 4,4 0 0,1 4,4 v 40  a 4,4 0 0,1 -4,4 H 48   c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 H 4 a 4,4 0 0,1 -4,-4 z"/>
+    <g data-id="8,.|gFX?cTIdKMA@2M%!" class="blocklyDraggable" data-shapes="stack" data-category="looks" transform="translate(0,48)">
+      <path class="blocklyPath blocklyBlockBackground" stroke="#774DCB" fill="#9966FF" fill-opacity="1" d="m 0,4 A 4,4 0 0,1 4,0 H 12 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 H 77.99536895751953 a 4,4 0 0,1 4,4 v 40  a 4,4 0 0,1 -4,4 H 48   c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 H 4 a 4,4 0 0,1 -4,-4 z"/>
+      <g data-id="}B0)Qo)]-R6x6/fN730F" class="blocklyDraggable" data-shapes="c-block c-1 end" data-category="control" transform="translate(0,48)">
+        <path class="blocklyPath blocklyBlockBackground" stroke="#CF8B17" fill="#FFAB19" fill-opacity="1" d="m 0,4 A 4,4 0 0,1 4,0 H 12 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 H 156 a 4,4 0 0,1 4,4 v 40  a 4,4 0 0,1 -4,4 H 64 c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 h -8  a 4,4 0 0,0 -4,4 v 368 a 4,4 0 0,0 4,4 h  8 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 H 156 H 156 a 4,4 0 0,1 4,4 v 24  a 4,4 0 0,1 -4,4 H 4 a 4,4 0 0,1 -4,-4 z"/>
+        <g data-id="R.}#o/iF|I5v4x:y,tKM" class="blocklyDraggable" data-shapes="c-block c-1" data-category="control" transform="translate(16,48)">
+          <path class="blocklyPath blocklyBlockBackground" stroke="#CF8B17" fill="#FFAB19" fill-opacity="1" d="m 0,4 A 4,4 0 0,1 4,0 H 12 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 H 156 a 4,4 0 0,1 4,4 v 40  a 4,4 0 0,1 -4,4 H 64 c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 h -8  a 4,4 0 0,0 -4,4 v 240 a 4,4 0 0,0 4,4 h  8 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 H 156 H 156 a 4,4 0 0,1 4,4 v 24  a 4,4 0 0,1 -4,4 H 48   c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 H 4 a 4,4 0 0,1 -4,-4 z"/>
+          <g data-id="RC1lN?MVW-oCgMQP7`2q" data-argument-type="text number" data-shapes="argument round" transform="translate(70.546875,8)">
+            <path class="blocklyPath blocklyBlockBackground" stroke="#CF8B17" fill="#FFFFFF" fill-opacity="1" d="m 0,0 m 16,0 H 32.6953125 a 16 16 0 0 1 0 32 H 16 a 16 16 0 0 1 0 -32 z"/>
+            <g class="blocklyEditableText" transform="translate(8, 0) " style="cursor: text;">
+              <text class="blocklyText" x="16.34765625" y="18" dominant-baseline="middle" dy="0" text-anchor="middle" style="white-space: pre;">100</text>
+            </g>
+          </g>
+          <g data-id="!v)Lw]F%BVf0GDO^p]4N" class="blocklyDraggable" data-shapes="stack" data-category="motion" transform="translate(16,48)">
+            <path class="blocklyPath blocklyBlockBackground" stroke="#3373CC" fill="#4C97FF" fill-opacity="1" d="m 0,4 A 4,4 0 0,1 4,0 H 12 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 H 170.85647583007812 a 4,4 0 0,1 4,4 v 40  a 4,4 0 0,1 -4,4 H 48   c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 H 4 a 4,4 0 0,1 -4,-4 z"/>
+            <g data-id="yc.n9_b~wC0okr{8ky]x" data-argument-type="text number" data-shapes="argument round" transform="translate(126.85647583007812,8)">
+              <path class="blocklyPath blocklyBlockBackground" stroke="#3373CC" fill="#FFFFFF" fill-opacity="1" d="m 0,0 m 16,0 H 24 a 16 16 0 0 1 0 32 H 16 a 16 16 0 0 1 0 -32 z"/>
+              <g class="blocklyEditableText" transform="translate(8, 0) " style="cursor: text;">
+                <text class="blocklyText" x="12" y="18" dominant-baseline="middle" dy="0" text-anchor="middle" style="white-space: pre;">-6</text>
+              </g>
+            </g>
+            <g data-id="x-QbRITfKBO81Ex;T)G_" class="blocklyDraggable" data-shapes="c-block c-1" data-category="control" transform="translate(0,48)">
+              <path class="blocklyPath blocklyBlockBackground" stroke="#CF8B17" fill="#FFAB19" fill-opacity="1" d="m 0,4 A 4,4 0 0,1 4,0 H 12 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 H 268.8914909362793 a 4,4 0 0,1 4,4 v 48  a 4,4 0 0,1 -4,4 H 64 c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 h -8  a 4,4 0 0,0 -4,4 v 104 a 4,4 0 0,0 4,4 h  8 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 H 268.8914909362793 a 4,4 0 0,1 4,4 v 24  a 4,4 0 0,1 -4,4 H 48   c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 H 4 a 4,4 0 0,1 -4,-4 z"/>
+              <g data-id=":8jY(5l@kmNA.RBJeU@5" class="blocklyDraggable" data-shapes="reporter boolean" data-category="operators" transform="translate(48,4)">
+                <path class="blocklyPath blocklyBlockBackground" stroke="#389438" fill="#59C059" fill-opacity="1" d="m 0,0 m 24,0 H 157.0321159362793 l 24 24 l -24 24 H 24 l -24 -24 l 24 -24 z"/>
+                <g data-id="8oCAY4_3GJ1@YxueQZ^E" class="blocklyDraggable" data-shapes="reporter round" data-category="data" transform="translate(24,4)">
+                  <path class="blocklyPath blocklyBlockBackground" stroke="#DB6E00" fill="#FF8C1A" fill-opacity="1" d="m 0,0 m 20,0 H 51.4305534362793 a 20 20 0 0 1 0 40 H 20 a 20 20 0 0 1 0 -40 z"/>
+                  <g transform="translate(12, 4) ">
+                    <text class="blocklyText" x="23.71527671813965" y="18" dominant-baseline="middle" dy="0" text-anchor="middle" style="white-space: pre;">dood?</text>
+                  </g>
+                </g>
+                <g data-id="Tkkmp_A}l{]U7)3U((AD" data-argument-type="text" data-shapes="argument round" transform="translate(121.0321159362793,8)">
+                  <path class="blocklyPath blocklyBlockBackground" stroke="#389438" fill="#FFFFFF" fill-opacity="1" d="m 0,0 m 16,0 H 24 a 16 16 0 0 1 0 32 H 16 a 16 16 0 0 1 0 -32 z"/>
+                  <g class="blocklyEditableText" transform="translate(8, 0) " style="cursor: text;">
+                    <text class="blocklyText" x="12" y="18" dominant-baseline="middle" dy="0" text-anchor="middle" style="white-space: pre;">1</text>
+                  </g>
+                </g>
+                <path class="blocklyPath" style="visibility: hidden" d="" fill="#389438"/>
+                <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="4.80078125" transform="translate(103.4305534362793, 24) " style="white-space: pre;">=</text>
+                <path class="blocklyPath" style="visibility: hidden" d="" fill="#389438"/>
+              </g>
+              <g data-id="/y{T0bt^B|~H`sXk/te%" class="blocklyDraggable" data-shapes="stack" data-category="Pen" transform="translate(16,56)">
+                <path class="blocklyPath blocklyBlockBackground" stroke="#0B8E69" fill="#0FBD8C" fill-opacity="1" d="m 0,4 A 4,4 0 0,1 4,0 H 12 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 H 127.98147964477539 a 4,4 0 0,1 4,4 v 48  a 4,4 0 0,1 -4,4 H 48   c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 H 4 a 4,4 0 0,1 -4,-4 z"/>
+                <g data-id="v~YQSV1fQ(;l7(G)|q-B" class="blocklyDraggable" data-shapes="stack" data-category="control" transform="translate(0,56)">
+                  <path class="blocklyPath blocklyBlockBackground" stroke="#CF8B17" fill="#FFAB19" fill-opacity="1" d="m 0,4 A 4,4 0 0,1 4,0 H 12 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 H 270.3836784362793 a 4,4 0 0,1 4,4 v 48  a 4,4 0 0,1 -4,4 H 48   c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 H 4 a 4,4 0 0,1 -4,-4 z"/>
+                  <g data-id="M%C41bA;m9_rSyEoP-k%" class="blocklyDraggable" data-shapes="reporter boolean" data-category="operators" transform="translate(85.3515625,4)">
+                    <path class="blocklyPath blocklyBlockBackground" stroke="#389438" fill="#59C059" fill-opacity="1" d="m 0,0 m 24,0 H 157.0321159362793 l 24 24 l -24 24 H 24 l -24 -24 l 24 -24 z"/>
+                    <g data-id="(YESMlM|[DoXSw%BFI/6" class="blocklyDraggable" data-shapes="reporter round" data-category="data" transform="translate(24,4)">
+                      <path class="blocklyPath blocklyBlockBackground" stroke="#DB6E00" fill="#FF8C1A" fill-opacity="1" d="m 0,0 m 20,0 H 51.4305534362793 a 20 20 0 0 1 0 40 H 20 a 20 20 0 0 1 0 -40 z"/>
+                      <g transform="translate(12, 4) ">
+                        <text class="blocklyText" x="23.71527671813965" y="18" dominant-baseline="middle" dy="0" text-anchor="middle" style="white-space: pre;">dood?</text>
+                      </g>
+                    </g>
+                    <g data-id="_KHB!(dX]r%WAa4Zp!oS" data-argument-type="text" data-shapes="argument round" transform="translate(121.0321159362793,8)">
+                      <path class="blocklyPath blocklyBlockBackground" stroke="#389438" fill="#FFFFFF" fill-opacity="1" d="m 0,0 m 16,0 H 24 a 16 16 0 0 1 0 32 H 16 a 16 16 0 0 1 0 -32 z"/>
+                      <g class="blocklyEditableText" transform="translate(8, 0) " style="cursor: text;">
+                        <text class="blocklyText" x="12" y="18" dominant-baseline="middle" dy="0" text-anchor="middle" style="white-space: pre;">0</text>
+                      </g>
+                    </g>
+                    <path class="blocklyPath" style="visibility: hidden" d="" fill="#389438"/>
+                    <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="4.80078125" transform="translate(103.4305534362793, 24) " style="white-space: pre;">=</text>
+                    <path class="blocklyPath" style="visibility: hidden" d="" fill="#389438"/>
+                  </g>
+                  <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="34.67578125" transform="translate(8, 28) " style="white-space: pre;">wacht tot</text>
+                  <path class="blocklyPath" style="visibility: hidden" d="" fill="#CF8B17"/>
+                </g>
+                <g transform="translate(8, 12) ">
+                  <image height="40px" width="40px" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+cGVuLWljb248L3RpdGxlPjxnIHN0cm9rZT0iIzU3NUU3NSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik04Ljc1MyAzNC42MDJsLTQuMjUgMS43OCAxLjc4My00LjIzN2MxLjIxOC0yLjg5MiAyLjkwNy01LjQyMyA1LjAzLTcuNTM4TDMxLjA2NiA0LjkzYy44NDYtLjg0MiAyLjY1LS40MSA0LjAzMi45NjcgMS4zOCAxLjM3NSAxLjgxNiAzLjE3My45NyA0LjAxNUwxNi4zMTggMjkuNTljLTIuMTIzIDIuMTE2LTQuNjY0IDMuOC03LjU2NSA1LjAxMiIgZmlsbD0iI0ZGRiIvPjxwYXRoIGQ9Ik0yOS40MSA2LjExcy00LjQ1LTIuMzc4LTguMjAyIDUuNzcyYy0xLjczNCAzLjc2Ni00LjM1IDEuNTQ2LTQuMzUgMS41NDYiLz48cGF0aCBkPSJNMzYuNDIgOC44MjVjMCAuNDYzLS4xNC44NzMtLjQzMiAxLjE2NGwtOS4zMzUgOS4zYy4yODItLjI5LjQxLS42NjguNDEtMS4xMiAwLS44NzQtLjUwNy0xLjk2My0xLjQwNi0yLjg2OC0xLjM2Mi0xLjM1OC0zLjE0Ny0xLjgtNC4wMDItLjk5TDMwLjk5IDUuMDFjLjg0NC0uODQgMi42NS0uNDEgNC4wMzUuOTYuODk4LjkwNCAxLjM5NiAxLjk4MiAxLjM5NiAyLjg1NU0xMC41MTUgMzMuNzc0Yy0uNTczLjMwMi0xLjE1Ny41Ny0xLjc2NC44M0w0LjUgMzYuMzgybDEuNzg2LTQuMjM1Yy4yNTgtLjYwNC41My0xLjE4Ni44MzMtMS43NTcuNjkuMTgzIDEuNDQ4LjYyNSAyLjEwOCAxLjI4Mi42Ni42NTggMS4xMDIgMS40MTIgMS4yODcgMi4xMDIiIGZpbGw9IiM0Qzk3RkYiLz48cGF0aCBkPSJNMzYuNDk4IDguNzQ4YzAgLjQ2NC0uMTQuODc0LS40MzMgMS4xNjVsLTE5Ljc0MiAxOS42OGMtMi4xMyAyLjExLTQuNjczIDMuNzkzLTcuNTcyIDUuMDFMNC41IDM2LjM4bC45NzQtMi4zMTYgMS45MjUtLjgwOGMyLjg5OC0xLjIxOCA1LjQ0LTIuOSA3LjU3LTUuMDFsMTkuNzQzLTE5LjY4Yy4yOTItLjI5Mi40MzItLjcwMi40MzItMS4xNjUgMC0uNjQ2LS4yNy0xLjQtLjc4LTIuMTIyLjI1LjE3Mi41LjM3Ny43MzcuNjE0Ljg5OC45MDUgMS4zOTYgMS45ODMgMS4zOTYgMi44NTYiIGZpbGw9IiM1NzVFNzUiIG9wYWNpdHk9Ii4xNSIvPjxwYXRoIGQ9Ik0xOC40NSAxMi44M2MwIC41LS40MDQuOTA1LS45MDQuOTA1cy0uOTA1LS40MDUtLjkwNS0uOTA0YzAtLjUuNDA3LS45MDMuOTA2LS45MDMuNSAwIC45MDQuNDA0LjkwNC45MDR6IiBmaWxsPSIjNTc1RTc1Ii8+PC9nPjwvc3ZnPg=="/>
+                </g>
+                <g transform="translate(56, 8) ">
+                  <line stroke="#0DA57A" stroke-linecap="round" x1="0" y1="0" x2="0" y2="40"/>
+                </g>
+                <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="29.490739822387695" transform="translate(65, 28) " style="white-space: pre;">stempel</text>
+              </g>
+              <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="10.53125" transform="translate(8, 28) " style="white-space: pre;">als</text>
+              <path class="blocklyPath" style="visibility: hidden" d="" fill="#CF8B17"/>
+              <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="13.9296875" transform="translate(237.0321159362793, 28) " style="white-space: pre;">dan</text>
+            </g>
+            <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="55.42823791503906" transform="translate(8, 24) " style="white-space: pre;">verander x met</text>
+            <path class="blocklyPath" style="visibility: hidden" d="" fill="#3373CC"/>
+          </g>
+          <g data-id="rVhe{[eUu5~EEXE=|PFw" class="blocklyDraggable" data-shapes="stack" data-category="motion" transform="translate(0,328)">
+            <path class="blocklyPath blocklyBlockBackground" stroke="#3373CC" fill="#4C97FF" fill-opacity="1" d="m 0,4 A 4,4 0 0,1 4,0 H 12 c 2,0 3,1 4,2 l 4,4 c 1,1 2,2 4,2 h 12 c 2,0 3,-1 4,-2 l 4,-4 c 1,-1 2,-2 4,-2 H 210.3726806640625 a 4,4 0 0,1 4,4 v 40  a 4,4 0 0,1 -4,4 H 48   c -2,0 -3,1 -4,2 l -4,4 c -1,1 -2,2 -4,2 h -12 c -2,0 -3,-1 -4,-2 l -4,-4 c -1,-1 -2,-2 -4,-2 H 4 a 4,4 0 0,1 -4,-4 z"/>
+            <g data-id="5Z{UpR;0^}.^EwY2D8%w" data-argument-type="text number" data-shapes="argument round" transform="translate(88.92823791503906,8)">
+              <path class="blocklyPath blocklyBlockBackground" stroke="#3373CC" fill="#FFFFFF" fill-opacity="1" d="m 0,0 m 16,0 H 32.6898136138916 a 16 16 0 0 1 0 32 H 16 a 16 16 0 0 1 0 -32 z"/>
+              <g class="blocklyEditableText" transform="translate(8, 0) " style="cursor: text;">
+                <text class="blocklyText" x="16.3449068069458" y="18" dominant-baseline="middle" dy="0" text-anchor="middle" style="white-space: pre;">300</text>
+              </g>
+            </g>
+            <g data-id="H?,(p]pK,`mcbiSV6Y}S" data-argument-type="text number" data-shapes="argument round" transform="translate(166.3726806640625,8)">
+              <path class="blocklyPath blocklyBlockBackground" stroke="#3373CC" fill="#FFFFFF" fill-opacity="1" d="m 0,0 m 16,0 H 24 a 16 16 0 0 1 0 32 H 16 a 16 16 0 0 1 0 -32 z"/>
+              <g class="blocklyEditableText" transform="translate(8, 0) " style="cursor: text;">
+                <text class="blocklyText" x="12" y="18" dominant-baseline="middle" dy="0" text-anchor="middle" style="white-space: pre;">0</text>
+              </g>
+            </g>
+            <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="36.46411895751953" transform="translate(8, 24) " style="white-space: pre;">ga naar x:</text>
+            <path class="blocklyPath" style="visibility: hidden" d="" fill="#3373CC"/>
+            <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="6.377314567565918" transform="translate(145.61805152893066, 24) " style="white-space: pre;">y:</text>
+            <path class="blocklyPath" style="visibility: hidden" d="" fill="#3373CC"/>
+          </g>
+          <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="27.2734375" transform="translate(8, 24) " style="white-space: pre;">herhaal</text>
+          <path class="blocklyPath" style="visibility: hidden" d="" fill="#CF8B17"/>
+          <g transform="translate(128, 300) ">
+            <image height="24px" width="24px" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9InJlcGVhdCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNCAyNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNDRjhCMTc7fQoJLnN0MXtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8dGl0bGU+cmVwZWF0PC90aXRsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTIzLjMsMTFjLTAuMywwLjYtMC45LDEtMS41LDFoLTEuNmMtMC4xLDEuMy0wLjUsMi41LTEuMSwzLjZjLTAuOSwxLjctMi4zLDMuMi00LjEsNC4xCgljLTEuNywwLjktMy42LDEuMi01LjUsMC45Yy0xLjgtMC4zLTMuNS0xLjEtNC45LTIuM2MtMC43LTAuNy0wLjctMS45LDAtMi42YzAuNi0wLjYsMS42LTAuNywyLjMtMC4ySDdjMC45LDAuNiwxLjksMC45LDIuOSwwLjkKCXMxLjktMC4zLDIuNy0wLjljMS4xLTAuOCwxLjgtMi4xLDEuOC0zLjVoLTEuNWMtMC45LDAtMS43LTAuNy0xLjctMS43YzAtMC40LDAuMi0wLjksMC41LTEuMmw0LjQtNC40YzAuNy0wLjYsMS43LTAuNiwyLjQsMEwyMyw5LjIKCUMyMy41LDkuNywyMy42LDEwLjQsMjMuMywxMXoiLz4KPHBhdGggY2xhc3M9InN0MSIgZD0iTTIxLjgsMTFoLTIuNmMwLDEuNS0wLjMsMi45LTEsNC4yYy0wLjgsMS42LTIuMSwyLjgtMy43LDMuNmMtMS41LDAuOC0zLjMsMS4xLTQuOSwwLjhjLTEuNi0wLjItMy4yLTEtNC40LTIuMQoJYy0wLjQtMC4zLTAuNC0wLjktMC4xLTEuMmMwLjMtMC40LDAuOS0wLjQsMS4yLTAuMWwwLDBjMSwwLjcsMi4yLDEuMSwzLjQsMS4xczIuMy0wLjMsMy4zLTFjMC45LTAuNiwxLjYtMS41LDItMi42CgljMC4zLTAuOSwwLjQtMS44LDAuMi0yLjhoLTIuNGMtMC40LDAtMC43LTAuMy0wLjctMC43YzAtMC4yLDAuMS0wLjMsMC4yLTAuNGw0LjQtNC40YzAuMy0wLjMsMC43LTAuMywwLjksMEwyMiw5LjgKCWMwLjMsMC4zLDAuNCwwLjYsMC4zLDAuOVMyMiwxMSwyMS44LDExeiIvPgo8L3N2Zz4K"/>
+          </g>
+        </g>
+        <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="27.2734375" transform="translate(8, 24) " style="white-space: pre;">herhaal</text>
+        <g transform="translate(128, 428) ">
+          <image height="24px" width="24px" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIxLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9InJlcGVhdCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNCAyNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNDRjhCMTc7fQoJLnN0MXtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8dGl0bGU+cmVwZWF0PC90aXRsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTIzLjMsMTFjLTAuMywwLjYtMC45LDEtMS41LDFoLTEuNmMtMC4xLDEuMy0wLjUsMi41LTEuMSwzLjZjLTAuOSwxLjctMi4zLDMuMi00LjEsNC4xCgljLTEuNywwLjktMy42LDEuMi01LjUsMC45Yy0xLjgtMC4zLTMuNS0xLjEtNC45LTIuM2MtMC43LTAuNy0wLjctMS45LDAtMi42YzAuNi0wLjYsMS42LTAuNywyLjMtMC4ySDdjMC45LDAuNiwxLjksMC45LDIuOSwwLjkKCXMxLjktMC4zLDIuNy0wLjljMS4xLTAuOCwxLjgtMi4xLDEuOC0zLjVoLTEuNWMtMC45LDAtMS43LTAuNy0xLjctMS43YzAtMC40LDAuMi0wLjksMC41LTEuMmw0LjQtNC40YzAuNy0wLjYsMS43LTAuNiwyLjQsMEwyMyw5LjIKCUMyMy41LDkuNywyMy42LDEwLjQsMjMuMywxMXoiLz4KPHBhdGggY2xhc3M9InN0MSIgZD0iTTIxLjgsMTFoLTIuNmMwLDEuNS0wLjMsMi45LTEsNC4yYy0wLjgsMS42LTIuMSwyLjgtMy43LDMuNmMtMS41LDAuOC0zLjMsMS4xLTQuOSwwLjhjLTEuNi0wLjItMy4yLTEtNC40LTIuMQoJYy0wLjQtMC4zLTAuNC0wLjktMC4xLTEuMmMwLjMtMC40LDAuOS0wLjQsMS4yLTAuMWwwLDBjMSwwLjcsMi4yLDEuMSwzLjQsMS4xczIuMy0wLjMsMy4zLTFjMC45LTAuNiwxLjYtMS41LDItMi42CgljMC4zLTAuOSwwLjQtMS44LDAuMi0yLjhoLTIuNGMtMC40LDAtMC43LTAuMy0wLjctMC43YzAtMC4yLDAuMS0wLjMsMC4yLTAuNGw0LjQtNC40YzAuMy0wLjMsMC43LTAuMywwLjksMEwyMiw5LjgKCWMwLjMsMC4zLDAuNCwwLjYsMC4zLDAuOVMyMiwxMSwyMS44LDExeiIvPgo8L3N2Zz4K"/>
+        </g>
+      </g>
+      <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="32.997684478759766" transform="translate(8, 24) " style="white-space: pre;">verschijn</text>
+    </g>
+    <text class="blocklyText" y="2" text-anchor="middle" dominant-baseline="middle" dy="0" x="94.26504516601562" transform="translate(8, 24) " style="white-space: pre;">wanneer ik als kloon start</text>
+  </g>
+</svg>
