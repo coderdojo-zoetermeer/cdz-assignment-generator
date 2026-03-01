@@ -37,8 +37,8 @@ worden omgezet naar mooi opgemaakte tekst (vaak HTML).
 
 Zie ook:
 
-- [Markdown Guide](https://www.markdownguide.org/){target=\_blank}
-- [Cheat sheet](https://www.markdownguide.org/cheat-sheet/){target=\_blank}
+- [Markdown Guide](https://www.markdownguide.org/){target=_blank}
+- [Cheat sheet](https://www.markdownguide.org/cheat-sheet/){target=_blank}
 
 :::
 
@@ -61,8 +61,8 @@ pagina begint.
 
 ## voorbeeld
 
-- [markdown](https://raw.githubusercontent.com/coderdojo-zoetermeer/cdz-assignment-generator/refs/heads/main/opdrachten/scratch/scratch.md){target=\_blank}
-- [HTML](https://coderdojo-zoetermeer.github.io/cdz-assignment-generator/scratch/scratch.html){target=\_blank}
+- [markdown](https://raw.githubusercontent.com/coderdojo-zoetermeer/cdz-assignment-generator/refs/heads/main/opdrachten/scratch/scratch.md){target=_blank}
+- [HTML](https://coderdojo-zoetermeer.github.io/cdz-assignment-generator/scratch/scratch.html){target=_blank}
 
 :::
 
