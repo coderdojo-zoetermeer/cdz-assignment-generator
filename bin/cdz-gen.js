@@ -23,8 +23,8 @@ program
 program
   .command("build")
   .description("Builds the assignments")
-  .action(() => {
-    gulpfile.build();
+  .action(async () => {
+    await gulpfile.build();
   });
 
 program
@@ -35,8 +35,14 @@ program
     "Builds the assignments and watches for changes and rebuilds assignments." +
       " Also starts a local server to serve the generated files.",
   )
-  .action((args) => {
-    gulpfile.server();
+  .action(async (args) => {
+    await new Promise((resolve) => {
+      const t = gulpfile.build(() => {
+        resolve();
+      });
+    });
+
+    gulpfile.watchChanges();
 
     liveServer.start({
       port: Number(args.port),
@@ -72,7 +78,7 @@ program
         encoding: "utf8",
       });
       const template = Handlebars.compile(templateContent);
-      const output = template({...args});
+      const output = template({ ...args });
       await fs.promises.writeFile(outputPath, output);
       console.log(
         `Assignment "${args.name}" generated successfully at ${outputPath}`,
