@@ -298,12 +298,31 @@ worden aangegeven in welke programmeertaal de uitleg moet worden gegeven.</p>
 <pre><code class="language-md"> &lt;!-- @include: global-lib/explain-mod.md#scratch --&gt;
 </code></pre>
 <p>wordt in Scratch:</p>
-<p>File not found</p>
-<p>voor arduino:</p>
+<div class="read">
+<p><em>Uitleg modulo functie</em></p>
+<p>De modulo functie geeft de restwaarde van een <em>gedeeld door</em> som met gehele
+getallen.</p>
+<p>Bijvoorbeeld: Stel dat je 13 snoepjes wil verdelen over 4 vrienden. Iedereen
+krijgt dan 3 snoepjes, en er blijft er dan 1 over.</p>
+<p>Dus <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>3</mn><mspace width="0.5em"/><mi>r</mi><mi>e</mi><mi>s</mi><mi>t</mi><mspace width="0.5em"/><mn>1</mn></mrow><annotation encoding="application/x-tex">13/4 = 3\enspace rest\enspace 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">13/4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.5em;"></span><span class="mord mathnormal">res</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.5em;"></span><span class="mord">1</span></span></span></span></p>
+<p>Voorbeeld:</p>
+<p><img src="./global-lib-assets/modulo-scratch-example.svg" alt=""></p>
+<p>De variabele met de naam <em>rest</em> heeft nu de waarde 1.</p>
+<div class="clear-float"></div></div><p>voor arduino:</p>
 <pre><code class="language-md"> &lt;!-- @include: global-lib/explain-mod.md#arduino --&gt;
 </code></pre>
-<p>File not found</p>
-<div class="clear-float"></div></div>
+<div class="read">
+<p><em>Uitleg modulo functie</em></p>
+<p>De modulo functie geeft de restwaarde van een <em>gedeeld door</em> som met gehele
+getallen.</p>
+<p>Bijvoorbeeld: Stel dat je 13 snoepjes wil verdelen over 4 vrienden. Iedereen
+krijgt dan 3 snoepjes, en er blijft er dan 1 over.</p>
+<p>Dus <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>3</mn><mspace width="0.5em"/><mi>r</mi><mi>e</mi><mi>s</mi><mi>t</mi><mspace width="0.5em"/><mn>1</mn></mrow><annotation encoding="application/x-tex">13/4 = 3\enspace rest\enspace 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">13/4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.5em;"></span><span class="mord mathnormal">res</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.5em;"></span><span class="mord">1</span></span></span></span></p>
+<p>Bij arduino schrijf je de modulo functie als een <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">%</span></span></span></span>-teken.</p>
+<p>Voorbeeld:</p>
+<pre><code class="language-c">    integer rest = <span class="hljs-number">13</span> % <span class="hljs-number">4</span>; <span class="hljs-comment">// De waarde van rest wordt 1</span>
+</code></pre>
+<div class="clear-float"></div></div><div class="clear-float"></div></div>
 
               <hr>
 

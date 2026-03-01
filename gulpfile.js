@@ -4,6 +4,8 @@ import { readFile, writeFile } from "node:fs/promises";
 import Handlebars from "handlebars";
 import path from "path";
 import { generateAssignment } from "./src/assignment-generator.js";
+import liveServer from "live-server";
+import minimist from "minimist";
 
 const templateDir = import.meta.dirname + "/templates";
 let assignmentList = [];
@@ -55,13 +57,40 @@ const copyTemplateAssets = async () => {
 };
 
 const watchTask = () => {
+  const options = minimist(process.argv.slice(2), {
+    string: ["port"],
+    boolean: ["noOpen"],
+    alias: { p: "port", n: "noOpen" },
+    default: { port: 8181, "noOpen": false },
+    unknown: () => false,
+  });
+
+  liveServer.start({
+    port: options.port,
+    host: "0.0.0.0",
+    root: "./docs",
+    open: !options.noOpen,
+    wait: 1000,
+    logLevel: 2,
+    middleware: [
+      function (req, res, next) {
+        next();
+      },
+    ],
+  });
+
   watch(["opdrachten/**/*", "templates/**/*", "global-lib/**/*"], build);
 };
+watchTask.description =
+  "Watch for changes in the opdrachten, templates, and global-lib folders and rebuild the documentation.";
 
 export const build = series(
   buildAssignments,
   copyTemplateAssets,
   copyIndexHtml,
 );
+build.description =
+  "Build the assignment documentation and copy assets to the docs folder.";
 
-export const watchChanges = series(watchTask);
+export const server = series(build, watchTask);
+export default build;

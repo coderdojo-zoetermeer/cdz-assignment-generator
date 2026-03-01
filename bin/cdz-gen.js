@@ -1,19 +1,9 @@
 #!/usr/bin/env node
 
 import { program } from "commander";
-import logger from "gulplog";
-import * as gulpfile from "../gulpfile.js";
 import fs from "fs";
 import Handlebars from "handlebars";
-import liveServer from "live-server";
-
-logger.on("info", (message) => {
-  console.log(message);
-});
-
-logger.on("error", (message) => {
-  console.error(message);
-});
+import { execSync } from "child_process";
 
 program
   .name("cdz-gen")
@@ -24,7 +14,9 @@ program
   .command("build")
   .description("Builds the assignments")
   .action(async () => {
-    await gulpfile.build();
+    execSync("npx gulp -LLL build", {
+      stdio: "inherit",
+    });
   });
 
 program
@@ -36,27 +28,12 @@ program
       " Also starts a local server to serve the generated files.",
   )
   .action(async (args) => {
-    await new Promise((resolve) => {
-      const t = gulpfile.build(() => {
-        resolve();
-      });
-    });
-
-    gulpfile.watchChanges();
-
-    liveServer.start({
-      port: Number(args.port),
-      host: "0.0.0.0",
-      root: "./docs",
-      open: args.browserOpen,
-      wait: 1000,
-      logLevel: 2,
-      middleware: [
-        function (req, res, next) {
-          next();
-        },
-      ],
-    });
+    execSync(
+      `npx gulp -LLL server -p ${args.port} ${!args.browserOpen ? "-n" : ""}`,
+      {
+        stdio: "inherit",
+      },
+    );
   });
 
 program

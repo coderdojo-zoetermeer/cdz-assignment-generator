@@ -41,7 +41,7 @@ export function createMarkdownRenderer() {
     resolvePath: (filePath, currentPath) => {
       const pathParts = filePath.split(path.sep);
       if (pathParts[0].indexOf("global-") === 0) {
-        return path.resolve(import.meta.dirname, filePath);
+        return path.resolve(import.meta.dirname, '..', filePath);
       } else {
         return path.resolve(currentPath, filePath);
       }
@@ -52,7 +52,7 @@ export function createMarkdownRenderer() {
     resolvePath: (filePath, currentPath) => {
       const pathParts = filePath.split(path.sep);
       if (pathParts[0].indexOf("global-") === 0) {
-        return path.resolve(import.meta.dirname, filePath);
+        return path.resolve(import.meta.dirname, '..', filePath);
       } else {
         return path.resolve(currentPath, filePath);
       }
