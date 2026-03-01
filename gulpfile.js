@@ -1,7 +1,7 @@
-import { series, parallel, watch, src, dest } from "gulp";
+import { series, watch, src, dest } from "gulp";
 import vfs from "vinyl-fs";
 import MarkdownIt from "markdown-it";
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, mkdir, copyFile, stat } from "node:fs/promises";
 import meta from "markdown-it-meta";
 import Handlebars from "handlebars";
 import hljs from "highlight.js/lib/core";
@@ -21,7 +21,6 @@ import { demo } from "@mdit/plugin-demo";
 import { stylize } from "@mdit/plugin-stylize";
 import { include } from "@mdit/plugin-include";
 import { katex } from "@mdit/plugin-katex";
-import fs from "fs";
 import { tab } from "@mdit/plugin-tab";
 
 const templateDir = import.meta.dirname + "/templates";
@@ -167,6 +166,17 @@ Handlebars.registerHelper(
   },
 );
 
+// Helper to check the existence of a file. Replaces deprecated "exists" in 
+// node:fs with a custom implementation using stat.
+async function exists(f) {
+  try {
+    await stat(f);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function generateAssignment() {
   const writable = new Writable({
     async write(data, cb) {
@@ -213,7 +223,7 @@ function generateAssignment() {
         });
 
         // Generate the assignment HTML file
-        await fs.promises.mkdir(targetDir, { recursive: true });
+        await mkdir(targetDir, { recursive: true });
         const targetPath = path.join(targetDir, pathInfo.name + ".html");
         await writeFile(targetPath, output);
 
@@ -242,15 +252,16 @@ function generateAssignment() {
 
           const targetDirForAsset = path.dirname(assetTargetPath);
 
-          await fs.promises.mkdir(targetDirForAsset, { recursive: true });
+          await mkdir(targetDirForAsset, { recursive: true });
 
-          if (fs.existsSync(assetSourcePath)) {
-            await fs.promises.copyFile(assetSourcePath, assetTargetPath);
+
+          if (await exists(assetSourcePath)) {
+            await copyFile(assetSourcePath, assetTargetPath);
           } else {
             for (const includedPath of asset.includedPaths) {
               const possiblePath = path.resolve(includedPath, asset.src);
-              if (fs.existsSync(possiblePath)) {
-                await fs.promises.copyFile(possiblePath, assetTargetPath);
+              if (await exists(possiblePath)) {
+                await copyFile(possiblePath, assetTargetPath);
                 continue;
               }
             }
