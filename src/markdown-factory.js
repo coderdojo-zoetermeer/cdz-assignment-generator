@@ -25,7 +25,7 @@ hljs.registerLanguage("py", python);
 export function createMarkdownRenderer() {
   const md = MarkdownIt({
     html: true,
-    highlight: function (str, lang) {
+    highlight: (str, lang) => {
       if (lang && hljs.getLanguage(lang)) {
         try {
           return hljs.highlight(str, { language: lang, ignoreIllegals: false })
@@ -128,7 +128,7 @@ export function createMarkdownRenderer() {
 
   const defaultHrRenderer = md.renderer.hr || ruleProxy;
 
-  md.renderer.rules.hr = function (tokens, idx, options, env, self) {
+  md.renderer.rules.hr = (tokens, idx, options, env, self) => {
     if (tokens[idx].markup[0] === "-") {
       tokens[idx].attrJoin("class", "separator-thin");
     } else if (tokens[idx].markup[0] === "_") {
@@ -142,7 +142,7 @@ export function createMarkdownRenderer() {
 
   const defaultLinkRenderer = md.renderer.image || ruleProxy;
 
-  md.renderer.rules.image = function (tokens, idx, options, env, self) {
+  md.renderer.rules.image = (tokens, idx, options, env, self) => {
     env.usedAssets.push({
       src: tokens[idx].attrGet("src"),
       includedPaths: [...(env.includedPaths || [])],
