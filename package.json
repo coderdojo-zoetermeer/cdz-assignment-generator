@@ -15,7 +15,7 @@
   "type": "module",
   "main": "gulpfile.js",
   "bin": {
-    "cdz-gen": "bin/cdz-gen.js"
+    "cdz-gen": "src/cdz-gen.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

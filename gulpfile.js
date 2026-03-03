@@ -11,7 +11,7 @@ import fs from "node:fs";
 import logger from "gulplog";
 import chalk from "chalk";
 
-const templateDir = import.meta.dirname + "/templates";
+const templateDir = path.join(import.meta.dirname, "src", "templates");
 
 const buildAssignments = () => {
   return src(["opdrachten/**/*.md"], {
@@ -79,8 +79,9 @@ const buildAssignments = () => {
 };
 
 const copyTemplateAssets = async () => {
-  src([path.join(templateDir, "template-assets", "**/*")], {
+  src([path.join(templateDir, "template-assets/**/*")], {
     encoding: false,
+    base: path.join(templateDir, "template-assets")
   }).pipe(dest("docs/template-assets"));
 };
 
@@ -117,4 +118,11 @@ build.description =
   "Build the assignment documentation and copy assets to the docs folder.";
 
 export const server = series(build, watchTask);
+server.description =
+  "Runs a HTTP server with live-reload when a assignment changes";
+server.flags = {
+  '--port': 'The port to listen on. Default=8181',
+  '--noOpen': 'Do not open the browser. Default: false'
+};
+
 export default build;

@@ -4,7 +4,7 @@ import { createMarkdownRenderer } from "./markdown-factory.js";
 import { readFile } from "node:fs/promises";
 import { stat } from "node:fs/promises";
 
-const templateDir = path.join(import.meta.dirname, "../templates");
+const templateDir = path.join(import.meta.dirname, "templates");
 
 // Helper to check the existence of a file. Replaces deprecated "exists" in
 // node:fs with a custom implementation using stat.

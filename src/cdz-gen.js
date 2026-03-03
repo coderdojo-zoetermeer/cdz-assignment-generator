@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { program } from "commander";
+import { program, Option } from "commander";
 import fs from "fs";
 import Handlebars from "handlebars";
 import { execSync } from "child_process";
@@ -37,17 +37,33 @@ program
   });
 
 program
-  .command("gen-assignment")
-  .description("Generates a new assignment file")
-  .requiredOption("-n, --name <name>", "Name of the assignment")
-  .option(
-    "-p, --progLang <progLang>",
-    "Programming language for the assignment",
-    "scratch3",
+  .command("assignment")
+  .description("Generates a new assignment markdown file")
+  .addOption(
+    new Option(
+      "-n, --name <name>",
+      "Name of the assignment",
+    ).makeOptionMandatory(),
   )
-  .option("-t, --theme <theme>", "Theme for the assignment", "scratch")
+  .addOption(
+    new Option(
+      "-p, --progLang <progLang>",
+      "Programming language for the assignment",
+      "scratch3",
+    ).choices(["scratch1", "scratch2", "scratch3", "python", "arduino"]),
+  )
+  .addOption(
+    new Option(
+      "-t, --theme <theme>",
+      "Theme for the assignment",
+      "scratch",
+    ).choices(["scratch", "python", "arduino", "generic"]),
+  )
+  .addOption(
+    new Option("-a, --author <author>", "The author of the assignment", "-"),
+  )
   .action(async (args) => {
-    const templatePath = `${import.meta.dirname}/../templates/assignment-template.hbs`;
+    const templatePath = `${import.meta.dirname}/templates/assignment-template.hbs`;
     const outputPath = `${args.name}.md`;
 
     try {
