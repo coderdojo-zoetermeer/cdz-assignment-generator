@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link
@@ -230,22 +231,29 @@
     <div class='footer'></div>
 
     <script>
-      const inactive = tab => tab.classList.remove('active') const active = tab
-      => tab.classList.add('active') const tabClick = tab =>
-      tab.addEventListener('click', listener) const listener = (event) => { //
-      id for the clicked button const tabId =
-      event.target.getAttribute('data-id') // the parent container's id const
-      containerId =
-      event.target.parentElement.parentElement.getAttribute('data-id') // syntax
-      sugar for self const parentQuery =
-      `.tabs-tabs-wrapper[data-id=${containerId}]` // Set everything in this
-      parent container to inactive document.querySelectorAll(`${parentQuery}
-      .tabs-tab-content`).forEach(inactive)
-      document.querySelectorAll(`${parentQuery} .tabs-tabs-header
-      button`).forEach(inactive) // Set the tab id's items to active
-      document.querySelectorAll(`[data-id=${tabId}]`).forEach(active) } // Set
-      it up for all my homies (multiple tabs)
-      document.querySelectorAll('.tabs-tabs-header button').forEach(tabClick)
+      const inactive = (tab) => tab.classList.remove('active');
+      const active = (tab) => tab.classList.add('active');
+      const tabClick = (tab) => tab.addEventListener('click', listener);
+      const listener = (event) => {
+        const tabId = event.target.getAttribute('data-id');
+        containerId =
+          event.target.parentElement.parentElement.getAttribute('data-id');
+        const parentQuery = `.tabs-tabs-wrapper[data-id=${containerId}]`;
+        document
+          .querySelectorAll(
+            `${parentQuery}
+            .tabs-tab-content`,
+          )
+          .forEach(inactive);
+        document
+          .querySelectorAll(
+            `${parentQuery} .tabs-tabs-header
+            button`,
+          )
+          .forEach(inactive);
+        document.querySelectorAll(`[data-id=${tabId}]`).forEach(active);
+      };
+      document.querySelectorAll('.tabs-tabs-header button').forEach(tabClick);
     </script>
   </body>
 </html>
