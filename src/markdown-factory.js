@@ -3,6 +3,7 @@ import meta from 'markdown-it-meta';
 import hljs from 'highlight.js/lib/core';
 import cpp from 'highlight.js/lib/languages/cpp';
 import python from 'highlight.js/lib/languages/python';
+import plaintext from 'highlight.js/lib/languages/plaintext';
 import path from 'path';
 import markdownItAttrs from 'markdown-it-attrs';
 import { snippet } from '@mdit/plugin-snippet';
@@ -19,20 +20,53 @@ import MarkdownItTOC from 'markdown-it-table-of-contents';
 import MarkdownItAnchor from 'markdown-it-anchor';
 import { inlineRule } from '@mdit/plugin-inline-rule';
 import { alert } from '@mdit/plugin-alert';
+import jsdom from 'jsdom';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
+const { JSDOM } = jsdom;
+const { window } = new JSDOM(`<!DOCTYPE html><p></p>`);
+globalThis.window = window;
+const scratchblocks =
+  require('scratchblocks/build/scratchblocks.min.es').default;
+const loadTranslations =
+  require('scratchblocks/build/translations-all-es').default;
+loadTranslations(scratchblocks);
 
 hljs.registerLanguage('c', cpp);
 hljs.registerLanguage('cpp', cpp);
 hljs.registerLanguage('ino', cpp);
 hljs.registerLanguage('py', python);
+hljs.registerLanguage('scratch', plaintext);
 
 export function createMarkdownRenderer() {
   const md = MarkdownIt({
     html: true,
+    inline: true,
     highlight: (str, lang) => {
       if (lang && hljs.getLanguage(lang)) {
         try {
-          return hljs.highlight(str, { language: lang, ignoreIllegals: false })
-            .value;
+          if (lang === 'scratch') {
+            const options = {
+              style: 'scratch3',
+              inline: false,
+              languages: ['nl'],
+              scale: 1,
+            };
+            const parsed = scratchblocks.parse(str, options);
+            const view = scratchblocks.newView(parsed, options);
+            const svg = view.render(options);
+            return `<svg width="${svg.viewBox.baseVal.width}" 
+                      height="${svg.viewBox.baseVal.height}" >
+                        ${svg.innerHTML}
+                    </svg>`;
+          } else {
+            return hljs.highlight(str, {
+              language: lang,
+              ignoreIllegals: false,
+            }).value;
+          }
         } catch (ignoreErr) {
           // intentionally blank
         }

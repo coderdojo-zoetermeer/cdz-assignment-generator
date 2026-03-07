@@ -144,7 +144,7 @@ volgende code blokken doen.
 Voeg deze codeblokken toe aan ![cat =12x](./assets/cat.svg)
 
 Dit zorgt ervoor dat ![cat =12x](./assets/cat.svg) "Ik ben er!!!"" zegt als hij
-```Sprite 2``` raakt. ```Sprite 2``` is de sprite voor de
+`Sprite 2` raakt. `Sprite 2` is de sprite voor de
 finishlijn.
 
 :::
@@ -163,7 +163,7 @@ ________________________________________________________________________________
 Dit is een Race! dus moeten we de tijd bij gaan houden hoelang de kat erover
 doet.
 
-We hebben hiervoor een variabele nodig met de naam ```tijd```. In de
+We hebben hiervoor een variabele nodig met de naam `tijd`. In de
 uitleg over variabelen staat hoe dit moet.
 
 Maak nu zelf een variabele met de naam tijd.
@@ -184,7 +184,7 @@ programma start.
 
 ![reset time =x150](./assets/reset-time.svg)
 
-Zorg er nu voor dat de variable ```tijd``` elke seconde met 1 wordt
+Zorg er nu voor dat de variable `tijd` elke seconde met 1 wordt
 verhoogt.
 
 ![count seconds =x200](./assets/count-seconds.svg)
@@ -278,7 +278,9 @@ Als het spel begint moet ![cat =12x](./assets/cat.svg) op y-positie 0 staan.
 Voeg het onderstaande blok toe aan je programma. Je moet zelf bepalen waar hij
 moet komen.
 
-![reset y =150x](./assets/reset-y.svg)
+```scratch
+maak y (0)
+```
 
 Speel het spel en kijk of alles werkt.
 

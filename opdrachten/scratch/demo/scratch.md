@@ -34,6 +34,17 @@ ________________________________________________________________________________
 
 ![./assets/test.svg =300x](./assets/test.svg)
 
+```scratch
+
+wanneer groene vlag wordt aangeklikt
+neem (10) stappen
+
+wanneer [spatiebalk v] is ingedrukt
+neem (20) stappen
+
+
+```
+
 ::::
 
 ________________________________________________________________________________

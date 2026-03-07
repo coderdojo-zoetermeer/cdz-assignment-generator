@@ -29,7 +29,7 @@ meerdere opdrachten kunnen worden gebruikt.
 
 Deze gegenereerde
 HTML bestanden zijn geschikt op te kunnen printen over meerdere pagina's. Met
-de text ```*pagebreak*``` kan je ervoor zorgen dat de volgende sectie op een
+de text `*pagebreak*` kan je ervoor zorgen dat de volgende sectie op een
 nieuwe pagina begint.
 
 Een voorbeeld van een opdracht die is gemaakt met deze generator is Kat Race.
@@ -178,7 +178,7 @@ naar links of rechts te laten "floaten" zodat de tekst er automatisch omheen
 wordt weergegeven. De plaatjes kan je ergens in de directory structuur van
 de opdracht plaatsen. Linken naar plaatjes die online staan is ook mogelijk.
 
-Met het element ```*clear-float*``` kan je ervoor zorgen dat de tekst erna weer
+Met het element `*clear-float*` kan je ervoor zorgen dat de tekst erna weer
 onder het plaatje wordt weergegeven en dus niet ernaast.
 (Zie ook: [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/clear))
 
@@ -237,19 +237,19 @@ zijn beschikbaar. De PRO iconen dus niet.
 
 Hieronder enkele voorbeelden van de syntax:
 
-```::<familie> <naam> =<grootte> /<kleur>::```
+`::<familie> <naam> =<grootte> /<kleur>::`
 
 familie, naam en grootte zijn optioneel.
 
 *Voorbeelden:*
 
-| Markdown                             | Voorbeeld                      |
-|:-------------------------------------|:-------------------------------|
-| ```::solid computer =30::```         | ::solid computer =30::         |
-| ```::solid robot =30::```            | ::solid robot =30::            |
-| ```::solid microchip =30::```        | ::solid microchip =30::        |
-| ```::solid microchip =30 /green::``` | ::solid microchip =30 /green:: |
-| ```::microchip::```                  | ::microchip::                  |
+| Markdown                         | Voorbeeld                      |
+|:---------------------------------|:-------------------------------|
+| `::solid computer =30::`         | ::solid computer =30::         |
+| `::solid robot =30::`            | ::solid robot =30::            |
+| `::solid microchip =30::`        | ::solid microchip =30::        |
+| `::solid microchip =30 /green::` | ::solid microchip =30 /green:: |
+| `::microchip::`                  | ::microchip::                  |
 
 # Signaaltekst
 

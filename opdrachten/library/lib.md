@@ -22,7 +22,7 @@ infoBlocks:
 
 ## Algemeen
 
-```<!-- @include: global-lib/explain-function.md#uitleg -->```
+`<!-- @include: global-lib/explain-function.md#uitleg -->`
 
 <!-- @include: global-lib/explain-function.md#uitleg -->
 
@@ -32,19 +32,19 @@ infoBlocks:
 
 @tab:active scratch#scratch
 
-```<!-- @include: global-lib/explain-function.md#voorbeeld-scratch -->```
+`<!-- @include: global-lib/explain-function.md#voorbeeld-scratch -->`
 
 <!-- @include: global-lib/explain-function.md#voorbeeld-scratch -->
 
 @tab arduino#arduino
 
-```<!-- @include: global-lib/explain-function.md#voorbeeld-arduino -->```
+`<!-- @include: global-lib/explain-function.md#voorbeeld-arduino -->`
 
 <!-- @include: global-lib/explain-function.md#voorbeeld-arduino -->
 
 @tab python#python
 
-```<!-- @include: global-lib/explain-function.md#voorbeeld-python -->```
+`<!-- @include: global-lib/explain-function.md#voorbeeld-python -->`
 
 <!-- @include: global-lib/explain-function.md#voorbeeld-python -->
 
@@ -58,7 +58,7 @@ infoBlocks:
 
 @tab:active scratch#scratch
 
-```<!-- @include: global-lib/explain-axis.md#x-as-scratch -->```
+`<!-- @include: global-lib/explain-axis.md#x-as-scratch -->`
 
 <!-- @include: global-lib/explain-axis.md#x-as-scratch -->
 
@@ -80,7 +80,7 @@ infoBlocks:
 
 @tab:active scratch#scratch
 
-```<!-- @include: global-lib/explain-axis.md#y-as-scratch -->```
+`<!-- @include: global-lib/explain-axis.md#y-as-scratch -->`
 
 <!-- @include: global-lib/explain-axis.md#y-as-scratch -->
 
@@ -102,7 +102,7 @@ infoBlocks:
 
 @tab:active scratch#scratch
 
-```<!-- @include: global-lib/explain-variabele.md#scratch -->```
+`<!-- @include: global-lib/explain-variabele.md#scratch -->`
 
 <!-- @include: global-lib/explain-variabele.md#scratch -->
 
@@ -124,7 +124,7 @@ infoBlocks:
 
 @tab:active scratch#scratch
 
-```<!-- @include: global-lib/explain-events.md#scratch -->```
+`<!-- @include: global-lib/explain-events.md#scratch -->`
 
 <!-- @include: global-lib/explain-events.md#scratch -->
 
@@ -146,19 +146,19 @@ infoBlocks:
 
 @tab:active scratch#scratch
 
-```<!-- @include: global-lib/explain-mod.md#scratch -->```
+`<!-- @include: global-lib/explain-mod.md#scratch -->`
 
 <!-- @include: global-lib/explain-mod.md#scratch -->
 
 @tab arduino#arduino
 
-```<!-- @include: global-lib/explain-mod.md#arduino -->```
+`<!-- @include: global-lib/explain-mod.md#arduino -->`
 
 <!-- @include: global-lib/explain-mod.md#arduino -->
 
 @tab python#python
 
-```<!-- @include: global-lib/explain-mod.md#python -->```
+`<!-- @include: global-lib/explain-mod.md#python -->`
 
 <!-- @include: global-lib/explain-mod.md#python -->
 
@@ -168,15 +168,15 @@ infoBlocks:
 
 # Programmastructuur
 
-## Algemeen
+## Programmastructuur Algemeen
 
-```<!-- @include: global-lib/explain-structure.md#general -->```
+`<!-- @include: global-lib/explain-structure.md#general -->`
 
 <!-- @include: global-lib/explain-structure.md#general -->
 
 ## Inspringen
 
-```<!-- @include: global-lib/explain-structure.md#indent -->```
+`<!-- @include: global-lib/explain-structure.md#indent -->`
 
 <!-- @include: global-lib/explain-structure.md#indent -->
 
