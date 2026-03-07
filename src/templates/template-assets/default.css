@@ -264,3 +264,12 @@ hr.separator-hidden {
   display:inline-block;
   border-radius: 3px;
 }
+
+:not(pre) > code {
+  border: 1px solid black;
+  padding: 1px;
+  background-color: #F8F8FF;
+  font-family: 'Courier New', monospace;
+  display:inline-block;
+  border-radius: 3px;
+}

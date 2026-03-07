@@ -5,13 +5,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/arduino-light.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="../template-assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../template-assets/alert.css" />
     <link rel="stylesheet" href="../template-assets/default.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans"
@@ -41,51 +36,51 @@
         body {
         background-image:
           url("../template-assets/generic/left.svg"),
-                      url("../template-assets/generic/right.svg");
-                      background-size: 15px, 15px;
-                      background-repeat: repeat-y, repeat-y;
-                      background-position: left, right;
-                      margin: 0px;
-                    }
-                  }
+              url("../template-assets/generic/right.svg");
+              background-size: 15px, 15px;
+              background-repeat: repeat-y, repeat-y;
+              background-position: left, right;
+              margin: 0px;
+            }
+          }
 
-                  @media screen {
-                    body {
-                    background-image:
-                      url("../template-assets/generic/left.svg"),
-                      url("../template-assets/generic/right.svg");
-                      background-size: 15px 100%, 15px 100%;
-                      background-repeat: no-repeat, no-repeat;
-                      background-position: left, right;
-                      margin: 0px;
-                    }
-                  }
+          @media screen {
+            body {
+            background-image:
+              url("../template-assets/generic/left.svg"),
+              url("../template-assets/generic/right.svg");
+              background-size: 15px 100%, 15px 100%;
+              background-repeat: no-repeat, no-repeat;
+              background-position: left, right;
+              margin: 0px;
+            }
+          }
 
-                    .header {
-                      background-image: url("../template-assets/generic/top.svg");
-                      background-size: 100% 15px;
-                      background-repeat: no-repeat;
-                      width: 100%;
-                      min-height: 15px;
-                    }
+            .header {
+              background-image: url("../template-assets/generic/top.svg");
+              background-size: 100% 15px;
+              background-repeat: no-repeat;
+              width: 100%;
+              min-height: 15px;
+            }
 
-                    .footer {
-                      background-image: url("../template-assets/generic/bottom.svg");
-                      background-size: 100% 15px;
-                      background-repeat: no-repeat;
-                      width: 100%;
-                      min-height: 15px;
-                    }
-                    .separator-fat {
-                      display: block;
-                      background-image: url("../template-assets/generic/separator.svg");
-                      background-size: 100% 10px;
-                      background-repeat: no-repeat;
-                      height: 10px;
-                      margin-top: 5px;
-                      margin-bottom: 5px;
-                      clear: both;
-                    }
+            .footer {
+              background-image: url("../template-assets/generic/bottom.svg");
+              background-size: 100% 15px;
+              background-repeat: no-repeat;
+              width: 100%;
+              min-height: 15px;
+            }
+            .separator-fat {
+              display: block;
+              background-image: url("../template-assets/generic/separator.svg");
+              background-size: 100% 10px;
+              background-repeat: no-repeat;
+              height: 10px;
+              margin-top: 5px;
+              margin-bottom: 5px;
+              clear: both;
+            }
     </style>
   </head>
 
@@ -128,7 +123,7 @@
 
               <hr class="separator-fat">
 <h1 id="index" tabindex="-1">Index</h1>
-<div class="table-of-contents"><ul><li><a href="#index">Index</a></li><li><a href="#functies">Functies</a><ul><li><a href="#algemeen">Algemeen</a></li><li><a href="#voorbeelden-voor-het-maken-van-een-functie">Voorbeelden voor het maken van een functie</a></li></ul></li><li><a href="#x-as">X-as</a></li><li><a href="#y-as">Y-as</a></li><li><a href="#variabelen">Variabelen</a></li><li><a href="#events">Events</a></li><li><a href="#modulo-functie">Modulo functie</a></li></ul></div>
+<div class="table-of-contents"><ul><li><a href="#index">Index</a></li><li><a href="#functies">Functies</a><ul><li><a href="#algemeen">Algemeen</a></li><li><a href="#voorbeelden-voor-het-maken-van-een-functie">Voorbeelden voor het maken van een functie</a></li></ul></li><li><a href="#x-as">X-as</a></li><li><a href="#y-as">Y-as</a></li><li><a href="#variabelen">Variabelen</a></li><li><a href="#events">Events</a></li><li><a href="#modulo-functie">Modulo functie</a></li><li><a href="#programmastructuur">Programmastructuur</a><ul><li><a href="#algemeen-1">Algemeen</a></li><li><a href="#inspringen">Inspringen</a></li></ul></li></ul></div>
 <hr class="separator-fat">
 <h1 id="functies" tabindex="-1">Functies</h1>
 <h2 id="algemeen" tabindex="-1">Algemeen</h2>
@@ -401,6 +396,69 @@ krijgt dan 3 snoepjes, en er blijft er dan 1 over.</p>
 <div class="clear-float"></div></div></div>
   </div>
 </div>
+<hr class="separator-fat">
+<h1 id="programmastructuur" tabindex="-1">Programmastructuur</h1>
+<h2 id="algemeen-1" tabindex="-1">Algemeen</h2>
+<p><code>&lt;!-- @include: global-lib/explain-structure.md#general --&gt;</code></p>
+<div class="read">
+<p><em>Uitleg programmastructuur</em></p>
+<p>De programmastructuur bepaald in welke volgorde de opdrachten in je programma
+worden uitgevoerd.</p>
+<p>Er zijn verschillende soorten structuren.</p>
+<p><i class="fa-regular fa-hand-point-right"></i> <em>Sequentie</em></p>
+<p>In een sequentie worden de opdrachten opeenvolgend uitgevoerd. In Python ziet
+dat er als volgt uit:</p>
+<pre><code class="language-py">    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Dit wordt als eerste uitgevoerd&quot;</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Dit wordt als tweede uitgevoerd&quot;</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Dit wordt als laatste uitgevoerd&quot;</span>)
+</code></pre>
+<p><i class="fa-regular fa-hand-point-right"></i> <em>Conditie</em></p>
+<p>In een conditie worden opdrachten uitgevoerd als aan een voorwaarde is voldaan.
+Denk aan Als...Dan....</p>
+<p>Voorbeeld:</p>
+<pre><code class="language-py">    <span class="hljs-keyword">if</span> key_press == <span class="hljs-string">&quot;space&quot;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Dit wordt uitgevoerd als de spatiebalk is ingedrukt&quot;</span>)
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> key_press == <span class="hljs-string">&quot;q&quot;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Dit wordt uitgevoerd als de q-toets is ingedrukt&quot;</span>)
+    <span class="hljs-keyword">else</span>
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Dit wordt uitgevoerd in alle andere gevallen&quot;</span>)
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Dit wordt ook uitgevoerd in alle andere gevallen&quot;</span>)
+
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;dit hoort niet bij de if en wordt altijd uitgevoerd&quot;</span>)
+</code></pre>
+<p>Het is belangrijk dat de computer weet welke opdrachten bij de condities horen
+en welke niet. Om aan te geven dat een opdracht bij een conditie hoort, moet je
+hem inspringen. Hiermee wordt bedoeld dat je met 4 spaties de regel naar rechts
+verplaatst.</p>
+<p>De laatste opdracht <span class="bordered">print(&quot;dit wordt altijd uitgevoerd&quot;)</span> hoort niet bij de
+<span class="bordered">else</span>. Dit kan de computer zien omdat deze regel niet is ingesprongen.</p>
+<p><i class="fa-regular fa-hand-point-right"></i> <em>Iteratie</em></p>
+<p>Een iteratie is een lus waarmee opdrachten meerdere keren na elkaar kunnen
+worden uitgevoerd.</p>
+<p>Voorbeeld:</p>
+<pre><code class="language-py">    <span class="hljs-keyword">while</span> key_press == <span class="hljs-string">&quot;space&quot;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Dit commando wordt herhaald zolang de spatiebalk is ingedrukt&quot;</span>)
+
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Dit wordt uitgevoerd nadat de lus is afgelopen&quot;</span>).
+</code></pre>
+<div class="clear-float"></div></div><h2 id="inspringen" tabindex="-1">Inspringen</h2>
+<p><code>&lt;!-- @include: global-lib/explain-structure.md#indent --&gt;</code></p>
+<div class="read">
+<p><em>Uitleg inspringen</em></p>
+<p>Door opdrachten in te springen weet de computer waar een opdracht bij hoort.
+Inspringen doe je door aan het begin van een regel spaties in te voeren.</p>
+<p>Bijvoorbeeld:</p>
+<pre><code class="language-py">    <span class="hljs-keyword">if</span> key_press == <span class="hljs-string">&quot;spatie&quot;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Ik ben ingesprongen hoor dus bij de if&quot;</span>)
+
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Ik hoor niet bij de if&quot;</span>)
+</code></pre>
+<div class="markdown-alert markdown-alert-belangrijk">
+<p class="markdown-alert-title">Belangrijk</p>
+<p>Het is belangrijk dat je bij het programmeren goed oplet op het inspringen. Als
+je dit niet goed doet, werkt je programma niet.</p>
+</div>
+<div class="clear-float"></div></div><hr class="separator-fat">
 
 
 

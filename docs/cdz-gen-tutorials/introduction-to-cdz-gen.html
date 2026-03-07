@@ -5,13 +5,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/arduino-light.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="../template-assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../template-assets/alert.css" />
     <link rel="stylesheet" href="../template-assets/default.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans"
@@ -41,51 +36,51 @@
         body {
         background-image:
           url("../template-assets/generic/left.svg"),
-                      url("../template-assets/generic/right.svg");
-                      background-size: 15px, 15px;
-                      background-repeat: repeat-y, repeat-y;
-                      background-position: left, right;
-                      margin: 0px;
-                    }
-                  }
+              url("../template-assets/generic/right.svg");
+              background-size: 15px, 15px;
+              background-repeat: repeat-y, repeat-y;
+              background-position: left, right;
+              margin: 0px;
+            }
+          }
 
-                  @media screen {
-                    body {
-                    background-image:
-                      url("../template-assets/generic/left.svg"),
-                      url("../template-assets/generic/right.svg");
-                      background-size: 15px 100%, 15px 100%;
-                      background-repeat: no-repeat, no-repeat;
-                      background-position: left, right;
-                      margin: 0px;
-                    }
-                  }
+          @media screen {
+            body {
+            background-image:
+              url("../template-assets/generic/left.svg"),
+              url("../template-assets/generic/right.svg");
+              background-size: 15px 100%, 15px 100%;
+              background-repeat: no-repeat, no-repeat;
+              background-position: left, right;
+              margin: 0px;
+            }
+          }
 
-                    .header {
-                      background-image: url("../template-assets/generic/top.svg");
-                      background-size: 100% 15px;
-                      background-repeat: no-repeat;
-                      width: 100%;
-                      min-height: 15px;
-                    }
+            .header {
+              background-image: url("../template-assets/generic/top.svg");
+              background-size: 100% 15px;
+              background-repeat: no-repeat;
+              width: 100%;
+              min-height: 15px;
+            }
 
-                    .footer {
-                      background-image: url("../template-assets/generic/bottom.svg");
-                      background-size: 100% 15px;
-                      background-repeat: no-repeat;
-                      width: 100%;
-                      min-height: 15px;
-                    }
-                    .separator-fat {
-                      display: block;
-                      background-image: url("../template-assets/generic/separator.svg");
-                      background-size: 100% 10px;
-                      background-repeat: no-repeat;
-                      height: 10px;
-                      margin-top: 5px;
-                      margin-bottom: 5px;
-                      clear: both;
-                    }
+            .footer {
+              background-image: url("../template-assets/generic/bottom.svg");
+              background-size: 100% 15px;
+              background-repeat: no-repeat;
+              width: 100%;
+              min-height: 15px;
+            }
+            .separator-fat {
+              display: block;
+              background-image: url("../template-assets/generic/separator.svg");
+              background-size: 100% 10px;
+              background-repeat: no-repeat;
+              height: 10px;
+              margin-top: 5px;
+              margin-bottom: 5px;
+              clear: both;
+            }
     </style>
   </head>
 
@@ -126,14 +121,12 @@
               <div style="display: flex; flex-direction: row; gap: 0px 10px">
               </div>
 
-              <hr class="separator-fat">
-<div class="read">
-<p><em>Introductie</em></p>
-<p>In deze opdracht wordt uitgelegd hoe je met de cdz-assignment-generator
+              <div class="table-of-contents"><ul><li><a href="#introductie">Introductie</a></li><li><a href="#over-markdown">Over markdown</a></li><li><a href="#over-cdz-assignment-generator">Over cdz-assignment-generator</a></li><li><a href="#over-blokken">Over blokken</a><ul><li><a href="#read-blok">read-blok</a></li><li><a href="#programmeer-blok">programmeer-blok</a></li><li><a href="#build-blok">build-blok</a></li><li><a href="#uitdaging-blok">uitdaging-blok</a></li></ul></li><li><a href="#gebruik-van-images">Gebruik van images</a></li><li><a href="#verwijzen-naar-standaard-opdracht-blokken">Verwijzen naar standaard opdracht blokken</a></li><li><a href="#fontawesome-iconen">Fontawesome iconen</a></li></ul></div>
+<hr class="separator-fat">
+<h1 id="introductie" tabindex="-1">Introductie</h1>
+<p>In dit document wordt uitgelegd hoe je met de cdz-assignment-generator
 CoderDojo opdrachten kan maken.</p>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>Over markdown</em></p>
+<h1 id="over-markdown" tabindex="-1">Over markdown</h1>
 <p>Markdown is een eenvoudige opmaaktaal waarmee je tekst kunt structureren en
 opmaken met simpele tekens. Het wordt veel gebruikt voor documentatie,
 README-bestanden (bijvoorbeeld op GitHub), forums en notities.</p>
@@ -145,9 +138,8 @@ worden omgezet naar mooi opgemaakte tekst (vaak HTML).</p>
 <li><a href="https://www.markdownguide.org/" target="_blank">Markdown Guide</a></li>
 <li><a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Cheat sheet</a></li>
 </ul>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>Over cdz-assignment-generator</em></p>
+<hr class="separator-thin">
+<h1 id="over-cdz-assignment-generator" tabindex="-1">Over cdz-assignment-generator</h1>
 <p>De CDZ assignment generator is een tool waarmee markdown bestanden eenvoudig
 kunnen worden omgezet naar CoderDojo opdrachten in HTML.</p>
 <p>Vaak voorkomende blokken kunnen in een bibliotheek worden gezet zodat ze in
@@ -156,18 +148,15 @@ meerdere opdrachten kunnen worden gebruikt.</p>
 HTML bestanden zijn geschikt op te kunnen printen over meerdere pagina's. Met
 de text *pagebreak* kan je ervoor zorgen dat de volgende sectie op een nieuwe
 pagina begint.</p>
-<h2 id="voorbeeld" tabindex="-1">voorbeeld</h2>
+<p><em><strong>voorbeeld</strong></em></p>
 <ul>
 <li><a href="https://raw.githubusercontent.com/coderdojo-zoetermeer/cdz-assignment-generator/refs/heads/main/opdrachten/scratch/scratch.md" target="_blank">markdown</a></li>
 <li><a href="https://coderdojo-zoetermeer.github.io/cdz-assignment-generator/scratch/scratch.html" target="_blank">HTML</a></li>
 </ul>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>Over blokken</em></p>
-<p>Hieronder worden de blokken verder uitgelegd.</p>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>read-blok uitleg</em></p>
+<h1 id="over-blokken" tabindex="-1">Over blokken</h1>
+<p>Blokken worden gebruikt om opdrachten op te delen in stukken. Bij het printen
+van een opdracht worden een page-break binnen een blok automatisch vermeden.</p>
+<h2 id="read-blok" tabindex="-1">read-blok</h2>
 <p>Een read-blok is een blokje text waarin uitleg wordt aan de leerling. Probeer
 deze blokjes klein te houden en begin elk blokje met een kopje waaruit
 duidelijk wordt wat er wordt uitgelegd, zodat de leerling kan bepalen of
@@ -175,7 +164,7 @@ leerling het blokje moet lezen of hen het wil lezen.</p>
 <details><summary>Demo</summary>
 <pre><code class="language-md">::: read
 
-_Titel read blok_
+*Titel read blok*
 
 Tekst Read blok.
 
@@ -187,16 +176,14 @@ Tekst Read blok.
 <p>Tekst Read blok.</p>
 <div class="clear-float"></div></div></div>
 </details>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>programmeer-blok uitleg</em></p>
+<h2 id="programmeer-blok" tabindex="-1">programmeer-blok</h2>
 <p>Een programmeer-blok wordt gebruik om aan te duiden dat de leerling iets moet
 programmeren. In programmeerblokken kan je stukjes code toevoegen. Deze worden
 automatisch opgemaakt met syntax highlights.</p>
 <details><summary>Demo</summary>
 <pre><code class="language-md">::: program
 
-_Titel programmeer blok_
+*Titel programmeer blok*
 
 Tekst programmeerblok.
 
@@ -218,16 +205,14 @@ print('Hello world!')
 </code></pre>
 <div class="clear-float"></div></div></div>
 </details>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>build-blok uitleg</em></p>
+<h2 id="build-blok" tabindex="-1">build-blok</h2>
 <p>Een build wordt gebruikt om aan te duiden dat de leering iets moet doen. Dit
 is met name van toepassing voor Arduino opdrachten. bijvoorbeeld voor het
 bouwen van een elektronische schakeling.</p>
 <details><summary>Demo</summary>
 <pre><code class="language-md">::: build
 
-_Titel build blok_
+*Titel build blok*
 
 Tekst build-blok.
 
@@ -239,57 +224,62 @@ Tekst build-blok.
 <p>Tekst build-blok.</p>
 <div class="clear-float"></div></div></div>
 </details>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>gebruik van images</em></p>
+<h2 id="uitdaging-blok" tabindex="-1">uitdaging-blok</h2>
+<p>Een uitdaging-blok wordt gebuikt om de Ninja een extra uitdaging te geven.</p>
+<details><summary>Demo</summary>
+<pre><code class="language-md">::: challenge
+
+*Titel uitdaging blok*
+
+Tekst uitdaging-blok.
+
+:::
+</code></pre>
+<div class="demo-content">
+<div class="challenge">
+<p><em>Titel uitdaging blok</em></p>
+<p>Tekst uitdaging-blok.</p>
+<div class="clear-float"></div></div></div>
+</details>
+<h1 id="gebruik-van-images" tabindex="-1">Gebruik van images</h1>
 <p>Je kan eenvoudig plaatjes aan blokken toevoegen. Ook is het mogelijk plaatjes
 naar links of rechts te laten &quot;floaten&quot; zodat de tekst er automatisch omheen
 wordt weergegeven. De plaatjes kan je ergens in de directory structuur van
 de opdracht plaatsen. Linken naar plaatjes die online staan is ook mogelijk.</p>
-<p>Met het element *clear-float* kan je ervoor zorgen dat de tekst erna weer
+<p>Met het element <code>*clear-float*</code> kan je ervoor zorgen dat de tekst erna weer
 onder het plaatje wordt weergegeven en dus niet ernaast.
 (Zie ook: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/clear">CSS</a>)</p>
 <details><summary>Plaatjes</summary>
-<pre><code class="language-md">---
-
-![Arduino](assets/schema.svg){.float-right}
+<pre><code class="language-md">![Arduino](assets/schema.svg){.float-right}
 Het plaatje hiernaast wordt met de style float-right weergegeven.
 
----
-
-_clear-float_
+*clear-float*
 
 ![Arduino](assets/schema.svg){.float-left}
 Het plaatje hiernaast wordt met de style float-left weergegeven.
 
----
-
-_clear-float_
+*clear-float*
 
 Het plaatje hieronder wordt zonder float weergegeven.
 
 ![Arduino](assets/schema.svg)
 
-_clear-float_
+*clear-float*
 </code></pre>
 <div class="demo-content">
-<hr class="separator-thin">
 <p><img src="assets/schema.svg" alt="" class="float-right">
 Het plaatje hiernaast wordt met de style float-right weergegeven.</p>
-<hr class="separator-thin">
 <p><div class="clear-float"></div></p>
 <p><img src="assets/schema.svg" alt="" class="float-left">
 Het plaatje hiernaast wordt met de style float-left weergegeven.</p>
-<hr class="separator-thin">
 <p><div class="clear-float"></div></p>
 <p>Het plaatje hieronder wordt zonder float weergegeven.</p>
 <p><img src="assets/schema.svg" alt=""></p>
 <p><div class="clear-float"></div></p>
 </div>
 </details>
-<div class="clear-float"></div></div><hr class="separator-thin">
-<div class="read">
-<p><em>verwijzen naar standaard opdracht blokken</em></p>
+<hr class="separator-thin">
+<h1 id="verwijzen-naar-standaard-opdracht-blokken" tabindex="-1">Verwijzen naar standaard opdracht blokken</h1>
 <p>Vaak voorkomende elementen kunnen in een bibliotheek worden beheerd zodat ze
 eenvoudig kunnen worden hergebruikt. Hieronder een voorbeeld van het gebruik
 van het standaard element voor de uitleg van de modulo functie. Hier kan zelfs
@@ -321,7 +311,46 @@ krijgt dan 3 snoepjes, en er blijft er dan 1 over.</p>
 <p>Voorbeeld:</p>
 <pre><code class="language-c">    integer rest = <span class="hljs-number">13</span> % <span class="hljs-number">4</span>; <span class="hljs-comment">// De waarde van rest wordt 1</span>
 </code></pre>
-<div class="clear-float"></div></div><div class="clear-float"></div></div>
+<div class="clear-float"></div></div><h1 id="fontawesome-iconen" tabindex="-1">Fontawesome iconen</h1>
+<p>Het is mogelijk om iconen uit de fontawesome bibliotheek toe te voegen.</p>
+<p>De link <a href="https://fontawesome.com/search?ic=free-collection" target="_blank">font awesome</a>
+verwijst naar een site met de collectie van iconen. Alleen de gratis iconen
+zijn beschikbaar. De PRO iconen dus niet.</p>
+<p>Hieronder enkele voorbeelden van de syntax:</p>
+<p><code>::&lt;familie&gt; &lt;naam&gt; =&lt;grootte&gt; /&lt;kleur&gt;::</code></p>
+<p>familie, naam en grootte zijn optioneel.</p>
+<p><em>Voorbeelden:</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Markdown</th>
+<th style="text-align:left">Voorbeeld</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>::solid computer =30::</code></td>
+<td style="text-align:left"><i class="fa-solid fa-computer" style="font-size:30px"></i></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>::solid robot =30::</code></td>
+<td style="text-align:left"><i class="fa-solid fa-robot" style="font-size:30px"></i></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>::solid microchip =30::</code></td>
+<td style="text-align:left"><i class="fa-solid fa-microchip" style="font-size:30px"></i></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>::solid microchip =30 /green::</code></td>
+<td style="text-align:left"><i class="fa-solid fa-microchip" style="font-size:30px;color:green"></i></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>::microchip::</code></td>
+<td style="text-align:left"><i class="fa-microchip fa-solid"></i></td>
+</tr>
+</tbody>
+</table>
+
 
 
               <div class="license">

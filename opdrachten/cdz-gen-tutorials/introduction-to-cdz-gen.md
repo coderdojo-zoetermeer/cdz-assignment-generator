@@ -10,21 +10,16 @@ description: |
 infoBlocks:
 ---
 
+[[TOC]]
+
 ********************************************************************************
-::: read
 
-_Introductie_
+# Introductie
 
-In deze opdracht wordt uitgelegd hoe je met de cdz-assignment-generator
+In dit document wordt uitgelegd hoe je met de cdz-assignment-generator
 CoderDojo opdrachten kan maken.
 
-:::
-
----
-
-::: read
-
-_Over markdown_
+# Over markdown
 
 Markdown is een eenvoudige opmaaktaal waarmee je tekst kunt structureren en
 opmaken met simpele tekens. Het wordt veel gebruikt voor documentatie,
@@ -40,13 +35,9 @@ Zie ook:
 - [Markdown Guide](https://www.markdownguide.org/){target=_blank}
 - [Cheat sheet](https://www.markdownguide.org/cheat-sheet/){target=_blank}
 
-:::
+--------------------------------------------------------------------------------
 
----
-
-::: read
-
-_Over cdz-assignment-generator_
+# Over cdz-assignment-generator
 
 De CDZ assignment generator is een tool waarmee markdown bestanden eenvoudig
 kunnen worden omgezet naar CoderDojo opdrachten in HTML.
@@ -59,28 +50,17 @@ HTML bestanden zijn geschikt op te kunnen printen over meerdere pagina's. Met
 de text \*pagebreak\* kan je ervoor zorgen dat de volgende sectie op een nieuwe
 pagina begint.
 
-## voorbeeld
+***voorbeeld***
 
 - [markdown](https://raw.githubusercontent.com/coderdojo-zoetermeer/cdz-assignment-generator/refs/heads/main/opdrachten/scratch/scratch.md){target=_blank}
 - [HTML](https://coderdojo-zoetermeer.github.io/cdz-assignment-generator/scratch/scratch.html){target=_blank}
 
-:::
+# Over blokken
 
----
+Blokken worden gebruikt om opdrachten op te delen in stukken. Bij het printen
+van een opdracht worden een page-break binnen een blok automatisch vermeden.
 
-::: read
-
-_Over blokken_
-
-Hieronder worden de blokken verder uitgelegd.
-
-:::
-
----
-
-::::: read
-
-_read-blok uitleg_
+## read-blok
 
 Een read-blok is een blokje text waarin uitleg wordt aan de leerling. Probeer
 deze blokjes klein te houden en begin elk blokje met een kopje waaruit
@@ -91,7 +71,7 @@ leerling het blokje moet lezen of hen het wil lezen.
 
 ::: read
 
-_Titel read blok_
+*Titel read blok*
 
 Tekst Read blok.
 
@@ -99,13 +79,7 @@ Tekst Read blok.
 
 ::::
 
-:::::
-
----
-
-::::: read
-
-_programmeer-blok uitleg_
+## programmeer-blok
 
 Een programmeer-blok wordt gebruik om aan te duiden dat de leerling iets moet
 programmeren. In programmeerblokken kan je stukjes code toevoegen. Deze worden
@@ -115,7 +89,7 @@ automatisch opgemaakt met syntax highlights.
 
 ::: program
 
-_Titel programmeer blok_
+*Titel programmeer blok*
 
 Tekst programmeerblok.
 
@@ -129,13 +103,7 @@ print('Hello world!')
 
 ::::
 
-:::::
-
----
-
-::::: read
-
-_build-blok uitleg_
+## build-blok
 
 Een build wordt gebruikt om aan te duiden dat de leering iets moet doen. Dit
 is met name van toepassing voor Arduino opdrachten. bijvoorbeeld voor het
@@ -145,7 +113,7 @@ bouwen van een elektronische schakeling.
 
 ::: build
 
-_Titel build blok_
+*Titel build blok*
 
 Tekst build-blok.
 
@@ -153,56 +121,56 @@ Tekst build-blok.
 
 ::::
 
-:::::
+## uitdaging-blok
 
----
+Een uitdaging-blok wordt gebuikt om de Ninja een extra uitdaging te geven.
 
-:::: read
+:::: demo
 
-_gebruik van images_
+::: challenge
+
+*Titel uitdaging blok*
+
+Tekst uitdaging-blok.
+
+:::
+
+::::
+
+# Gebruik van images
 
 Je kan eenvoudig plaatjes aan blokken toevoegen. Ook is het mogelijk plaatjes
 naar links of rechts te laten "floaten" zodat de tekst er automatisch omheen
 wordt weergegeven. De plaatjes kan je ergens in de directory structuur van
 de opdracht plaatsen. Linken naar plaatjes die online staan is ook mogelijk.
 
-Met het element \*clear-float\* kan je ervoor zorgen dat de tekst erna weer
+Met het element ```*clear-float*``` kan je ervoor zorgen dat de tekst erna weer
 onder het plaatje wordt weergegeven en dus niet ernaast.
 (Zie ook: [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/clear))
 
 ::: demo Plaatjes
 
----
-
 ![Arduino](assets/schema.svg){.float-right}
 Het plaatje hiernaast wordt met de style float-right weergegeven.
 
----
-
-_clear-float_
+*clear-float*
 
 ![Arduino](assets/schema.svg){.float-left}
 Het plaatje hiernaast wordt met de style float-left weergegeven.
 
----
-
-_clear-float_
+*clear-float*
 
 Het plaatje hieronder wordt zonder float weergegeven.
 
 ![Arduino](assets/schema.svg)
 
-_clear-float_
+*clear-float*
 
 :::
 
-::::
+--------------------------------------------------------------------------------
 
----
-
-::::: read
-
-_verwijzen naar standaard opdracht blokken_
+# Verwijzen naar standaard opdracht blokken
 
 Vaak voorkomende elementen kunnen in een bibliotheek worden beheerd zodat ze
 eenvoudig kunnen worden hergebruikt. Hieronder een voorbeeld van het gebruik
@@ -225,4 +193,26 @@ voor arduino:
 
 <!-- @include: global-lib/explain-mod.md#arduino -->
 
-:::::
+# Fontawesome iconen
+
+Het is mogelijk om iconen uit de fontawesome bibliotheek toe te voegen.
+
+De link [font awesome](https://fontawesome.com/search?ic=free-collection){target=_blank}
+verwijst naar een site met de collectie van iconen. Alleen de gratis iconen
+zijn beschikbaar. De PRO iconen dus niet.
+
+Hieronder enkele voorbeelden van de syntax:
+
+```::<familie> <naam> =<grootte> /<kleur>::```
+
+familie, naam en grootte zijn optioneel.
+
+*Voorbeelden:*
+
+| Markdown                             | Voorbeeld                      |
+|:-------------------------------------|:-------------------------------|
+| ```::solid computer =30::```         | ::solid computer =30::         |
+| ```::solid robot =30::```            | ::solid robot =30::            |
+| ```::solid microchip =30::```        | ::solid microchip =30::        |
+| ```::solid microchip =30 /green::``` | ::solid microchip =30 /green:: |
+| ```::microchip::```                  | ::microchip::                  |

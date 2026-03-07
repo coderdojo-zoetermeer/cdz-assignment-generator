@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@eslint/js": "^10.0.1",
+    "@mdit/plugin-alert": "^0.23.1",
     "@mdit/plugin-container": "^0.22.3",
     "@mdit/plugin-demo": "^0.22.4",
     "@mdit/plugin-icon": "^0.23.1",
@@ -37,7 +38,6 @@
     "chalk": "^5.6.2",
     "commander": "^14.0.3",
     "eslint": "^10.0.2",
-    "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "globals": "^17.4.0",

@@ -8,7 +8,6 @@ import markdownItAttrs from 'markdown-it-attrs';
 import { snippet } from '@mdit/plugin-snippet';
 import { icon, fontawesomeRender } from '@mdit/plugin-icon';
 import { imgSize } from '@mdit/plugin-img-size';
-import { uml } from '@mdit/plugin-uml';
 import { mark } from '@mdit/plugin-mark';
 import { container } from '@mdit/plugin-container';
 import { demo } from '@mdit/plugin-demo';
@@ -19,6 +18,7 @@ import { tab } from '@mdit/plugin-tab';
 import MarkdownItTOC from 'markdown-it-table-of-contents';
 import MarkdownItAnchor from 'markdown-it-anchor';
 import { inlineRule } from '@mdit/plugin-inline-rule';
+import { alert } from '@mdit/plugin-alert';
 
 hljs.registerLanguage('c', cpp);
 hljs.registerLanguage('cpp', cpp);
@@ -33,7 +33,9 @@ export function createMarkdownRenderer() {
         try {
           return hljs.highlight(str, { language: lang, ignoreIllegals: false })
             .value;
-        } catch (__) {}
+        } catch (ignoreErr) {
+          // intentionally blank
+        }
       }
 
       return '';
@@ -70,7 +72,7 @@ export function createMarkdownRenderer() {
     render: fontawesomeRender,
   });
   md.use(mark);
-  const containerCloseRender = (tokens, index, options, _env, slf) =>
+  const containerCloseRender = (_tokens, _index, _options, _env, _slf) =>
     '<div class="clear-float"></div></div>';
 
   md.use(container, {
@@ -135,6 +137,10 @@ export function createMarkdownRenderer() {
     double: true,
     placement: 'before-emphasis',
     attrs: [['class', 'bordered']],
+  });
+  md.use(alert, {
+    alertNames: ['belangrijk', 'notitie', 'tip', 'waarschuwing', 'voorzichtig'],
+    deep: true,
   });
 
   const ruleProxy = (tokens, idx, options, env, self) =>

@@ -163,3 +163,21 @@ infoBlocks:
 <!-- @include: global-lib/explain-mod.md#python -->
 
 :::::
+
+********************************************************************************
+
+# Programmastructuur
+
+## Algemeen
+
+```<!-- @include: global-lib/explain-structure.md#general -->```
+
+<!-- @include: global-lib/explain-structure.md#general -->
+
+## Inspringen
+
+```<!-- @include: global-lib/explain-structure.md#indent -->```
+
+<!-- @include: global-lib/explain-structure.md#indent -->
+
+********************************************************************************
