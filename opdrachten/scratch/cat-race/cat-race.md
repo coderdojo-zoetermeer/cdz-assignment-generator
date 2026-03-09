@@ -53,7 +53,11 @@ ________________________________________________________________________________
 Als het spelletje start (Groene vlag) moet de kat links van het scherm staan.
 Gebruik de onderstaande code blokken om dit mogelijk te maken.
 
-![cat-to-left =300x ](./assets/cat-to-left200.svg)
+```scratch
+Wanneer groene vlag wordt aangeklikt
+maak x (-200)
+```
+
 
 :::
 
@@ -254,7 +258,10 @@ Dit kunnen we doen door de kat omhoog en omlaag te laten gaan. Gebruik pijltje
 omhoog om de kat om hoog te laten gaan. De Y Positie van de kat bepaald hoe
 hoog de kat staat.
 
-![banaan =300x](./assets/move-up.svg)
+```scratch
+wanneer [pijltje omhoog v] is ingedrukt
+verander y met (10)
+```
 
 :::
 
