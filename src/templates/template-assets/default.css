@@ -258,40 +258,41 @@ hr.separator-hidden {
 .bordered {
   border: 1px solid black;
   padding: 1px;
-  background-color: #F8F8FF;
+  background-color: #f8f8ff;
   font-family: 'Courier New', monospace;
-  display:inline-block;
+  display: inline-block;
   border-radius: 3px;
 }
 
 .markdown-example {
   border: 1px solid black;
   padding: 10px;
-  background-color: #F8F8FF;
+  background-color: #f8f8ff;
   font-family: 'Courier New', monospace;
-  display:inline-block;
+  display: inline-block;
   border-radius: 3px;
 }
 
 :not(pre) > code:not(.scratch) {
   border: 1px solid black;
   padding: 1px;
-  background-color: #F8F8FF;
+  background-color: #f8f8ff;
   font-family: 'Courier New', monospace;
-  display:inline-block;
+  display: inline-block;
   border-radius: 3px;
 }
 
-code[class*=language-],pre[class*=language-] {
-    font-size: 10px;
+code[class*='language-'],
+pre[class*='language-'] {
+  font-size: 10px;
 }
 
-pre[class*=language-] {
+pre[class*='language-'] {
   margin: 0px;
 }
 
 .highlighted {
-  background-color: Yellow;
+  background-color: #ffffb3;
   display: inline-block;
   width: 100%;
   padding: 0px;
@@ -299,47 +300,65 @@ pre[class*=language-] {
 }
 
 .highlighted.error {
-  background-color: Red;
+  background-color: #ffcccc;
+  font-weight: bold;
 }
 
 .highlighted.warning {
-  background-color: orange;
+  background-color: #ffebcc;
+  font-weight: bold;
 }
 
 .highlighted.info {
-  background-color: Green;
+  background-color: #d9ffcc;
+  font-weight: bold;
+}
+
+pre span.line {
+  display: block;
 }
 
 pre span.line:before {
-  content: attr(data-line, '0');
-  display: inline-block;
+  content: attr(data-line);
   border-right: 1px solid #ddd;
-  /* padding-right: 20px; */
   color: #888;
   margin: 0;
-  width: 50px;
+  width: 30px;
+  padding-left: 5px;
+}
+
+pre span.diff.remove {
+  text-decoration: line-through;
+  background-color: #ffcccc;
+  font-weight: bold;
+}
+
+pre span.diff.add {
+  font-weight: bold;
+  background-color: #d9ffcc;
+  font-weight: bold;
 }
 
 pre span.diff.remove:before {
   content: '-';
   display: inline-block;
   border-right: 1px solid #ddd;
-  width: 50px;
+  width: 30px;
   color: #888;
   margin: 0;
   padding-right: 5px;
   text-align: right;
-  font-weight: bold
+  font-weight: bold;
 }
 
 pre span.diff.add:before {
   content: '+';
   display: inline-block;
   border-right: 1px solid #ddd;
-  width: 50px;
+  width: 30px;
   color: #888;
   margin: 0;
   padding-right: 5px;
   text-align: right;
-  font-weight: bold
+  font-weight: bold;
 }

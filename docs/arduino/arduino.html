@@ -164,44 +164,7 @@ menu <strong>File -&gt; Examples -&gt; 01.Basics -&gt; Blink</strong>. Hieronder
 code eruit ziet.</p>
 <p>Start het programma met de <strong>Upload</strong> button. De LED knippert nu.</p>
 <div class="codeblock">
-<pre class="shiki vitesse-light has-highlighted has-diff" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#A0ADA0">/*</span></span>
-<span class="line" data-line="2"><span style="color:#A0ADA0">  Blink</span></span>
-<span class="line" data-line="3"></span>
-<span class="line" data-line="4"><span style="color:#A0ADA0">  Turns an LED on for one second, then off for one second, repeatedly.</span></span>
-<span class="line highlighted" data-line="5"></span>
-<span class="line highlighted" data-line="6"><span style="color:#A0ADA0">  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO</span></span>
-<span class="line highlighted" data-line="7"><span style="color:#A0ADA0">  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to</span></span>
-<span class="line highlighted" data-line="8"><span style="color:#A0ADA0">  the correct LED pin independent of which board is used.</span></span>
-<span class="line highlighted" data-line="9"><span style="color:#A0ADA0">  If you want to know what pin the on-board LED is connected to on your Arduino</span></span>
-<span class="line highlighted" data-line="10"><span style="color:#A0ADA0">  model, check the Technical Specs of your board at:</span></span>
-<span class="line" data-line="11"><span style="color:#A0ADA0">  https://docs.arduino.cc/hardware/</span></span>
-<span class="line" data-line="12"></span>
-<span class="line highlighted" data-line="13"><span style="color:#A0ADA0">  modified 8 May 2014</span></span>
-<span class="line" data-line="14"><span style="color:#A0ADA0">  by Scott Fitzgerald</span></span>
-<span class="line" data-line="15"><span style="color:#A0ADA0">  modified 2 Sep 2016</span></span>
-<span class="line" data-line="16"><span style="color:#A0ADA0">  by Arturo Guadalupi</span></span>
-<span class="line highlighted" data-line="17"><span style="color:#A0ADA0">  modified 8 Sep 2016</span></span>
-<span class="line highlighted" data-line="18"><span style="color:#A0ADA0">  by Colby Newman</span></span>
-<span class="line highlighted" data-line="19"></span>
-<span class="line highlighted" data-line="20"><span style="color:#A0ADA0">  This example code is in the public domain.</span></span>
-<span class="line" data-line="21"></span>
-<span class="line" data-line="22"><span style="color:#A0ADA0">  https://docs.arduino.cc/built-in-examples/basics/Blink/</span></span>
-<span class="line" data-line="23"><span style="color:#A0ADA0">*/</span></span>
-<span class="line" data-line="24"></span>
-<span class="line" data-line="25"><span style="color:#A0ADA0">// the setup function runs once when you press reset or power the board</span></span>
-<span class="line" data-line="26"><span style="color:#AB5959">void</span><span style="color:#59873A"> setup</span><span style="color:#999999">()</span><span style="color:#999999"> {</span></span>
-<span class="line" data-line="27"><span style="color:#A0ADA0">  // initialize digital pin LED_BUILTIN as an output.</span></span>
-<span class="line diff remove" data-line="28"><span style="color:#59873A">  pinMode</span><span style="color:#999999">(</span><span style="color:#393A34">LED_BUILTIN</span><span style="color:#999999">,</span><span style="color:#393A34"> OUTPUT</span><span style="color:#999999">);</span></span>
-<span class="line diff add" data-line="29"><span style="color:#999999">}</span></span>
-<span class="line" data-line="30"></span>
-<span class="line" data-line="31"><span style="color:#A0ADA0">// the loop function runs over and over again forever</span></span>
-<span class="line" data-line="32"><span style="color:#AB5959">void</span><span style="color:#59873A"> loop</span><span style="color:#999999">()</span><span style="color:#999999"> {</span></span>
-<span class="line highlighted error" data-line="33"><span style="color:#59873A">  digitalWrite</span><span style="color:#999999">(</span><span style="color:#393A34">LED_BUILTIN</span><span style="color:#999999">,</span><span style="color:#393A34"> HIGH</span><span style="color:#999999">);</span></span>
-<span class="line highlighted info" data-line="34"><span style="color:#59873A">  delay</span><span style="color:#999999">(</span><span style="color:#2F798A">1000</span><span style="color:#999999">);</span></span>
-<span class="line highlighted warning" data-line="35"><span style="color:#59873A">  digitalWrite</span><span style="color:#999999">(</span><span style="color:#393A34">LED_BUILTIN</span><span style="color:#999999">,</span><span style="color:#393A34"> LOW</span><span style="color:#999999">);</span></span>
-<span class="line highlighted" data-line="36"><span style="color:#59873A">  delay</span><span style="color:#999999">(</span><span style="color:#2F798A">1000</span><span style="color:#999999">);</span></span>
-<span class="line" data-line="37"><span style="color:#999999">}</span></span>
-<span class="line" data-line="38"></span></code></pre>
+<pre class="shiki vitesse-light has-diff has-highlighted" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#A0ADA0">/*</span></span><span class="line" data-line="2"><span style="color:#A0ADA0">  Blink</span></span><span class="line" data-line="3"></span><span class="line" data-line="4"><span style="color:#A0ADA0">  Turns an LED on for one second, then off for one second, repeatedly.</span></span><span class="line highlighted" data-line="5"></span><span class="line highlighted" data-line="6"><span style="color:#A0ADA0">  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO</span></span><span class="line highlighted" data-line="7"><span style="color:#A0ADA0">  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to</span></span><span class="line highlighted" data-line="8"><span style="color:#A0ADA0">  the correct LED pin independent of which board is used.</span></span><span class="line highlighted" data-line="9"><span style="color:#A0ADA0">  If you want to know what pin the on-board LED is connected to on your Arduino</span></span><span class="line highlighted" data-line="10"><span style="color:#A0ADA0">  model, check the Technical Specs of your board at:</span></span><span class="line" data-line="11"><span style="color:#A0ADA0">  https://docs.arduino.cc/hardware/</span></span><span class="line" data-line="12"></span><span class="line highlighted" data-line="13"><span style="color:#A0ADA0">  modified 8 May 2014</span></span><span class="line" data-line="14"><span style="color:#A0ADA0">  by Scott Fitzgerald</span></span><span class="line" data-line="15"><span style="color:#A0ADA0">  modified 2 Sep 2016</span></span><span class="line" data-line="16"><span style="color:#A0ADA0">  by Arturo Guadalupi</span></span><span class="line highlighted" data-line="17"><span style="color:#A0ADA0">  modified 8 Sep 2016</span></span><span class="line highlighted" data-line="18"><span style="color:#A0ADA0">  by Colby Newman</span></span><span class="line highlighted" data-line="19"></span><span class="line highlighted" data-line="20"><span style="color:#A0ADA0">  This example code is in the public domain.</span></span><span class="line" data-line="21"></span><span class="line" data-line="22"><span style="color:#A0ADA0">  https://docs.arduino.cc/built-in-examples/basics/Blink/</span></span><span class="line" data-line="23"><span style="color:#A0ADA0">*/</span></span><span class="line" data-line="24"></span><span class="line" data-line="25"><span style="color:#A0ADA0">// the setup function runs once when you press reset or power the board</span></span><span class="line diff remove" data-line="26"><span style="color:#AB5959">void</span><span style="color:#59873A"> setup</span><span style="color:#999999">()</span><span style="color:#999999"> {</span></span><span class="line" data-line="27"><span style="color:#A0ADA0">  // sss</span></span><span class="line diff remove highlighted info" data-line="28"><span style="color:#59873A">  pinMode</span><span style="color:#999999">(</span><span style="color:#393A34">LED_BUILTIN</span><span style="color:#999999">,</span><span style="color:#393A34"> OUTPUT</span><span style="color:#999999">);</span><span style="color:#A0ADA0"> // cc</span></span><span class="line diff add" data-line="29"><span style="color:#999999">}</span></span><span class="line" data-line="30"></span><span class="line" data-line="31"><span style="color:#A0ADA0">// the loop function runs over and over again forever</span></span><span class="line" data-line="32"><span style="color:#AB5959">void</span><span style="color:#59873A"> loop</span><span style="color:#999999">()</span><span style="color:#999999"> {</span></span><span class="line highlighted error" data-line="33"><span style="color:#59873A">  digitalWrite</span><span style="color:#999999">(</span><span style="color:#393A34">LED_BUILTIN</span><span style="color:#999999">,</span><span style="color:#393A34"> HIGH</span><span style="color:#999999">);</span></span><span class="line highlighted info" data-line="34"><span style="color:#59873A">  delay</span><span style="color:#999999">(</span><span style="color:#2F798A">1000</span><span style="color:#999999">);</span></span><span class="line highlighted warning" data-line="35"><span style="color:#59873A">  digitalWrite</span><span style="color:#999999">(</span><span style="color:#393A34">LED_BUILTIN</span><span style="color:#999999">,</span><span style="color:#393A34"> LOW</span><span style="color:#999999">);</span></span><span class="line highlighted" data-line="36"><span style="color:#59873A">  delay</span><span style="color:#999999">(</span><span style="color:#2F798A">1000</span><span style="color:#999999">);</span></span><span class="line" data-line="37"><span style="color:#999999">}</span></span><span class="line" data-line="38"></span></code></pre>
 <div class="clear-float"></div></div><div class="clear-float"></div></div><p><div class="pagebreak"></div></p>
 <hr class="separator-hidden">
 <div class="challenge">
@@ -307,7 +270,7 @@ code eruit ziet.</p>
         style: 'scratch3',
         inline: false,
         languages: ['nl'],
-        scale: 0.6,
+        scale: 0.8,
         inline: true,
       });
 

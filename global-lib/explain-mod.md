@@ -19,7 +19,12 @@ ________________________________________________________________________________
 
 Voorbeeld:
 
-![example](./global-lib-assets/modulo-scratch-example.svg)
+```scratch
+
+wanneer groene vlag wordt aangeklikt
+maak [rest v] ((13) modulo (4))
+
+```
 
 De variabele met de naam *rest* heeft nu de waarde 1.
 

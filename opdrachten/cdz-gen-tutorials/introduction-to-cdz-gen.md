@@ -1,12 +1,12 @@
 ---
-title: Maken van coderdojo opdrachten met de cdz-assignment-generator
+title: Handleiding maken van coderdojo opdrachten met de cdz-assignment-generator
 acknowledgements:
   author(s): Ben Mens
 level: 
 template: default
 theme: generic
 description: |
-  Maken van coderdojo opdrachten met de cdz-assignment-generator
+  Handleiding maken van coderdojo opdrachten met de cdz-assignment-generator
 infoBlocks:
 ---
 
@@ -14,7 +14,7 @@ infoBlocks:
 
 ********************************************************************************
 
-# Introductie
+# Handleiding
 
 In dit document wordt uitgelegd hoe je met de cdz-assignment-generator
 CoderDojo opdrachten kan maken.

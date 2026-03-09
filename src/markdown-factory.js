@@ -22,6 +22,7 @@ import {
   transformerNotationHighlight,
   transformerNotationErrorLevel,
   transformerNotationDiff,
+  transformerRemoveLineBreak,
 } from '@shikijs/transformers';
 
 const highlighter$ = createHighlighter({
@@ -58,10 +59,11 @@ export async function createMarkdownRenderer() {
             __raw: langAttrs,
           },
           transformers: [
+            transformerNotationDiff(),
             transformerMetaHighlight(),
             transformerNotationHighlight(),
             transformerNotationErrorLevel(),
-            transformerNotationDiff(),
+            transformerRemoveLineBreak(),
             {
               line(node, line) {
                 node.properties['data-line'] = line;

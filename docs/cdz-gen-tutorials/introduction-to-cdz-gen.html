@@ -113,14 +113,14 @@
         <tr>
           <td>
             <div class="assignment-content">
-              <p class="assignment-title">Maken van coderdojo opdrachten met de cdz-assignment-generator</p>
+              <p class="assignment-title">Handleiding maken van coderdojo opdrachten met de cdz-assignment-generator</p>
 
               <div style="display: flex; flex-direction: row; gap: 0px 10px">
               </div>
 
-              <div class="table-of-contents"><ul><li><a href="#introductie">Introductie</a></li><li><a href="#over-cdz-assignment-generator">Over cdz-assignment-generator</a></li><li><a href="#gebruik">Gebruik</a></li><li><a href="#over-markdown">Over markdown</a></li><li><a href="#over-blokken">Over blokken</a><ul><li><a href="#read-blok">read-blok</a></li><li><a href="#programmeer-blok">programmeer-blok</a></li><li><a href="#build-blok">build-blok</a></li><li><a href="#uitdaging-blok">uitdaging-blok</a></li></ul></li><li><a href="#gebruik-van-images">Gebruik van images</a></li><li><a href="#verwijzen-naar-standaard-opdracht-blokken">Verwijzen naar standaard opdracht blokken</a></li><li><a href="#fontawesome-iconen">Fontawesome iconen</a></li><li><a href="#signaaltekst">Signaaltekst</a></li></ul></div>
+              <div class="table-of-contents"><ul><li><a href="#handleiding">Handleiding</a></li><li><a href="#over-cdz-assignment-generator">Over cdz-assignment-generator</a></li><li><a href="#gebruik">Gebruik</a></li><li><a href="#over-markdown">Over markdown</a></li><li><a href="#over-blokken">Over blokken</a><ul><li><a href="#read-blok">read-blok</a></li><li><a href="#programmeer-blok">programmeer-blok</a></li><li><a href="#build-blok">build-blok</a></li><li><a href="#uitdaging-blok">uitdaging-blok</a></li></ul></li><li><a href="#gebruik-van-images">Gebruik van images</a></li><li><a href="#verwijzen-naar-standaard-opdracht-blokken">Verwijzen naar standaard opdracht blokken</a></li><li><a href="#fontawesome-iconen">Fontawesome iconen</a></li><li><a href="#signaaltekst">Signaaltekst</a></li></ul></div>
 <hr class="separator-fat">
-<h1 id="introductie" tabindex="-1">Introductie</h1>
+<h1 id="handleiding" tabindex="-1">Handleiding</h1>
 <p>In dit document wordt uitgelegd hoe je met de cdz-assignment-generator
 CoderDojo opdrachten kan maken.</p>
 <h1 id="over-cdz-assignment-generator" tabindex="-1">Over cdz-assignment-generator</h1>
@@ -161,16 +161,7 @@ van een opdracht worden een page-break binnen een blok automatisch vermeden.</p>
 deze blokjes klein te houden en begin elk blokje met een kopje waaruit
 duidelijk wordt wat er wordt uitgelegd, zodat de leerling kan bepalen of
 leerling het blokje moet lezen of hen het wil lezen.</p>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"></span>
-<span class="line" data-line="2"><span style="color:#393A34">::: read</span></span>
-<span class="line" data-line="3"></span>
-<span class="line" data-line="4"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">Titel read blok</span><span style="color:#999999;font-style:italic">*</span></span>
-<span class="line" data-line="5"></span>
-<span class="line" data-line="6"><span style="color:#393A34">Tekst Read blok.</span></span>
-<span class="line" data-line="7"></span>
-<span class="line" data-line="8"><span style="color:#393A34">:::</span></span>
-<span class="line" data-line="9"></span>
-<span class="line" data-line="10"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"></span><span class="line" data-line="2"><span style="color:#393A34">::: read</span></span><span class="line" data-line="3"></span><span class="line" data-line="4"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">Titel read blok</span><span style="color:#999999;font-style:italic">*</span></span><span class="line" data-line="5"></span><span class="line" data-line="6"><span style="color:#393A34">Tekst Read blok.</span></span><span class="line" data-line="7"></span><span class="line" data-line="8"><span style="color:#393A34">:::</span></span><span class="line" data-line="9"></span><span class="line" data-line="10"></span></code></pre>
 <div class="read">
 <p><em>Titel read blok</em></p>
 <p>Tekst Read blok.</p>
@@ -178,49 +169,22 @@ leerling het blokje moet lezen of hen het wil lezen.</p>
 <p>Een programmeer-blok wordt gebruik om aan te duiden dat de leerling iets moet
 programmeren. In programmeerblokken kan je stukjes code toevoegen. Deze worden
 automatisch opgemaakt met syntax highlights.</p>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#393A34">::: program</span></span>
-<span class="line" data-line="2"></span>
-<span class="line" data-line="3"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">Titel programmeer blok</span><span style="color:#999999;font-style:italic">*</span></span>
-<span class="line" data-line="4"></span>
-<span class="line" data-line="5"><span style="color:#393A34">Tekst programmeerblok.</span></span>
-<span class="line" data-line="6"></span>
-<span class="line" data-line="7"><span style="color:#999999">```</span><span style="color:#393A34">py</span></span>
-<span class="line" data-line="8"><span style="color:#998418">  print</span><span style="color:#999999">(</span><span style="color:#B5695977">'</span><span style="color:#B56959">Hello world!</span><span style="color:#B5695977">'</span><span style="color:#999999">)</span></span>
-<span class="line" data-line="9"><span style="color:#999999">```</span></span>
-<span class="line" data-line="10"><span style="color:#393A34">:::</span></span>
-<span class="line" data-line="11"></span>
-<span class="line" data-line="12"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#393A34">::: program</span></span><span class="line" data-line="2"></span><span class="line" data-line="3"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">Titel programmeer blok</span><span style="color:#999999;font-style:italic">*</span></span><span class="line" data-line="4"></span><span class="line" data-line="5"><span style="color:#393A34">Tekst programmeerblok.</span></span><span class="line" data-line="6"></span><span class="line" data-line="7"><span style="color:#999999">```</span><span style="color:#393A34">py</span></span><span class="line" data-line="8"><span style="color:#998418">  print</span><span style="color:#999999">(</span><span style="color:#B5695977">'</span><span style="color:#B56959">Hello world!</span><span style="color:#B5695977">'</span><span style="color:#999999">)</span></span><span class="line" data-line="9"><span style="color:#999999">```</span></span><span class="line" data-line="10"><span style="color:#393A34">:::</span></span><span class="line" data-line="11"></span><span class="line" data-line="12"></span></code></pre>
 <div class="program">
 <p><em>Titel programmeer blok</em></p>
 <p>Tekst programmeerblok.</p>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#998418">print</span><span style="color:#999999">(</span><span style="color:#B5695977">'</span><span style="color:#B56959">Hello world!</span><span style="color:#B5695977">'</span><span style="color:#999999">)</span></span>
-<span class="line" data-line="2"></span>
-<span class="line" data-line="3"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#998418">print</span><span style="color:#999999">(</span><span style="color:#B5695977">'</span><span style="color:#B56959">Hello world!</span><span style="color:#B5695977">'</span><span style="color:#999999">)</span></span><span class="line" data-line="2"></span><span class="line" data-line="3"></span></code></pre>
 <div class="clear-float"></div></div><h2 id="build-blok" tabindex="-1">build-blok</h2>
 <p>Een build wordt gebruikt om aan te duiden dat de leering iets moet doen. Dit
 is met name van toepassing voor Arduino opdrachten. bijvoorbeeld voor het
 bouwen van een elektronische schakeling.</p>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#393A34">::: build</span></span>
-<span class="line" data-line="2"></span>
-<span class="line" data-line="3"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">Titel build blok</span><span style="color:#999999;font-style:italic">*</span></span>
-<span class="line" data-line="4"></span>
-<span class="line" data-line="5"><span style="color:#393A34">Tekst build-blok.</span></span>
-<span class="line" data-line="6"></span>
-<span class="line" data-line="7"><span style="color:#393A34">:::</span></span>
-<span class="line" data-line="8"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#393A34">::: build</span></span><span class="line" data-line="2"></span><span class="line" data-line="3"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">Titel build blok</span><span style="color:#999999;font-style:italic">*</span></span><span class="line" data-line="4"></span><span class="line" data-line="5"><span style="color:#393A34">Tekst build-blok.</span></span><span class="line" data-line="6"></span><span class="line" data-line="7"><span style="color:#393A34">:::</span></span><span class="line" data-line="8"></span></code></pre>
 <div class="build">
 <p><em>Titel build blok</em></p>
 <p>Tekst build-blok.</p>
 <div class="clear-float"></div></div><h2 id="uitdaging-blok" tabindex="-1">uitdaging-blok</h2>
 <p>Een uitdaging-blok wordt gebuikt om de Ninja een extra uitdaging te geven.</p>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#393A34">::: challenge</span></span>
-<span class="line" data-line="2"></span>
-<span class="line" data-line="3"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">Titel uitdaging blok</span><span style="color:#999999;font-style:italic">*</span></span>
-<span class="line" data-line="4"></span>
-<span class="line" data-line="5"><span style="color:#393A34">Tekst uitdaging-blok.</span></span>
-<span class="line" data-line="6"></span>
-<span class="line" data-line="7"><span style="color:#393A34">:::</span></span>
-<span class="line" data-line="8"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#393A34">::: challenge</span></span><span class="line" data-line="2"></span><span class="line" data-line="3"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">Titel uitdaging blok</span><span style="color:#999999;font-style:italic">*</span></span><span class="line" data-line="4"></span><span class="line" data-line="5"><span style="color:#393A34">Tekst uitdaging-blok.</span></span><span class="line" data-line="6"></span><span class="line" data-line="7"><span style="color:#393A34">:::</span></span><span class="line" data-line="8"></span></code></pre>
 <div class="challenge">
 <p><em>Titel uitdaging blok</em></p>
 <p>Tekst uitdaging-blok.</p>
@@ -233,22 +197,7 @@ de opdracht plaatsen. Linken naar plaatjes die online staan is ook mogelijk.</p>
 onder het plaatje wordt weergegeven en dus niet ernaast.
 (Zie ook: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/clear">CSS</a>)</p>
 <details><summary>Plaatjes demo</summary>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">![</span><span style="color:#B56959">Arduino</span><span style="color:#999999">](</span><span style="color:#393A3490;text-decoration:underline">assets/schema.svg</span><span style="color:#999999">)</span><span style="color:#393A34">{.float-right}</span></span>
-<span class="line" data-line="2"><span style="color:#393A34">Het plaatje hiernaast wordt met de style float-right weergegeven.</span></span>
-<span class="line" data-line="3"></span>
-<span class="line" data-line="4"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">clear-float</span><span style="color:#999999;font-style:italic">*</span></span>
-<span class="line" data-line="5"></span>
-<span class="line" data-line="6"><span style="color:#999999">![</span><span style="color:#B56959">Arduino</span><span style="color:#999999">](</span><span style="color:#393A3490;text-decoration:underline">assets/schema.svg</span><span style="color:#999999">)</span><span style="color:#393A34">{.float-left}</span></span>
-<span class="line" data-line="7"><span style="color:#393A34">Het plaatje hiernaast wordt met de style float-left weergegeven.</span></span>
-<span class="line" data-line="8"></span>
-<span class="line" data-line="9"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">clear-float</span><span style="color:#999999;font-style:italic">*</span></span>
-<span class="line" data-line="10"></span>
-<span class="line" data-line="11"><span style="color:#393A34">Het plaatje hieronder wordt zonder float weergegeven.</span></span>
-<span class="line" data-line="12"></span>
-<span class="line" data-line="13"><span style="color:#999999">![</span><span style="color:#B56959">Arduino</span><span style="color:#999999">](</span><span style="color:#393A3490;text-decoration:underline">assets/schema.svg</span><span style="color:#999999">)</span></span>
-<span class="line" data-line="14"></span>
-<span class="line" data-line="15"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">clear-float</span><span style="color:#999999;font-style:italic">*</span></span>
-<span class="line" data-line="16"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">![</span><span style="color:#B56959">Arduino</span><span style="color:#999999">](</span><span style="color:#393A3490;text-decoration:underline">assets/schema.svg</span><span style="color:#999999">)</span><span style="color:#393A34">{.float-right}</span></span><span class="line" data-line="2"><span style="color:#393A34">Het plaatje hiernaast wordt met de style float-right weergegeven.</span></span><span class="line" data-line="3"></span><span class="line" data-line="4"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">clear-float</span><span style="color:#999999;font-style:italic">*</span></span><span class="line" data-line="5"></span><span class="line" data-line="6"><span style="color:#999999">![</span><span style="color:#B56959">Arduino</span><span style="color:#999999">](</span><span style="color:#393A3490;text-decoration:underline">assets/schema.svg</span><span style="color:#999999">)</span><span style="color:#393A34">{.float-left}</span></span><span class="line" data-line="7"><span style="color:#393A34">Het plaatje hiernaast wordt met de style float-left weergegeven.</span></span><span class="line" data-line="8"></span><span class="line" data-line="9"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">clear-float</span><span style="color:#999999;font-style:italic">*</span></span><span class="line" data-line="10"></span><span class="line" data-line="11"><span style="color:#393A34">Het plaatje hieronder wordt zonder float weergegeven.</span></span><span class="line" data-line="12"></span><span class="line" data-line="13"><span style="color:#999999">![</span><span style="color:#B56959">Arduino</span><span style="color:#999999">](</span><span style="color:#393A3490;text-decoration:underline">assets/schema.svg</span><span style="color:#999999">)</span></span><span class="line" data-line="14"></span><span class="line" data-line="15"><span style="color:#999999;font-style:italic">*</span><span style="color:#393A34;font-style:italic">clear-float</span><span style="color:#999999;font-style:italic">*</span></span><span class="line" data-line="16"></span></code></pre>
 <div class="demo-content">
 <p><img src="assets/schema.svg" alt="" class="float-right">
 Het plaatje hiernaast wordt met de style float-right weergegeven.</p>
@@ -267,8 +216,7 @@ Het plaatje hiernaast wordt met de style float-left weergegeven.</p>
 eenvoudig kunnen worden hergebruikt. Hieronder een voorbeeld van het gebruik
 van het standaard element voor de uitleg van de modulo functie. Hier kan zelfs
 worden aangegeven in welke programmeertaal de uitleg moet worden gegeven.</p>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#A0ADA0"> &#x3C;!-- @include: global-lib/explain-mod.md#scratch --></span></span>
-<span class="line" data-line="2"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#A0ADA0"> &#x3C;!-- @include: global-lib/explain-mod.md#scratch --></span></span><span class="line" data-line="2"></span></code></pre>
 <p>wordt in Scratch:</p>
 <div class="read">
 <p><em>Uitleg modulo functie</em></p>
@@ -278,11 +226,14 @@ getallen.</p>
 krijgt dan 3 snoepjes, en er blijft er dan 1 over.</p>
 <p>Dus <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>3</mn><mspace width="0.5em"/><mi>r</mi><mi>e</mi><mi>s</mi><mi>t</mi><mspace width="0.5em"/><mn>1</mn></mrow><annotation encoding="application/x-tex">13/4 = 3\enspace rest\enspace 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">13/4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.5em;"></span><span class="mord mathnormal">res</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.5em;"></span><span class="mord">1</span></span></span></span></p>
 <p>Voorbeeld:</p>
-<p><img src="./global-lib-assets/modulo-scratch-example.svg" alt=""></p>
+<pre class="scratchblocks">
+wanneer groene vlag wordt aangeklikt
+maak [rest v] ((13) modulo (4))
+
+</pre>
 <p>De variabele met de naam <em>rest</em> heeft nu de waarde 1.</p>
 <div class="clear-float"></div></div><p>voor arduino:</p>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#A0ADA0"> &#x3C;!-- @include: global-lib/explain-mod.md#arduino --></span></span>
-<span class="line" data-line="2"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#A0ADA0"> &#x3C;!-- @include: global-lib/explain-mod.md#arduino --></span></span><span class="line" data-line="2"></span></code></pre>
 <div class="read">
 <p><em>Uitleg modulo functie</em></p>
 <p>De modulo functie geeft de restwaarde van een <em>gedeeld door</em> som met gehele
@@ -292,8 +243,7 @@ krijgt dan 3 snoepjes, en er blijft er dan 1 over.</p>
 <p>Dus <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi mathvariant="normal">/</mi><mn>4</mn><mo>=</mo><mn>3</mn><mspace width="0.5em"/><mi>r</mi><mi>e</mi><mi>s</mi><mi>t</mi><mspace width="0.5em"/><mn>1</mn></mrow><annotation encoding="application/x-tex">13/4 = 3\enspace rest\enspace 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">13/4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.5em;"></span><span class="mord mathnormal">res</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.5em;"></span><span class="mord">1</span></span></span></span></p>
 <p>Bij arduino schrijf je de modulo functie als een <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">%</span></span></span></span>-teken.</p>
 <p>Voorbeeld:</p>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#393A34">    integer rest </span><span style="color:#999999">=</span><span style="color:#2F798A"> 13</span><span style="color:#AB5959"> %</span><span style="color:#2F798A"> 4</span><span style="color:#999999">;</span><span style="color:#A0ADA0"> // De waarde van rest wordt 1</span></span>
-<span class="line" data-line="2"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#393A34">    integer rest </span><span style="color:#999999">=</span><span style="color:#2F798A"> 13</span><span style="color:#AB5959"> %</span><span style="color:#2F798A"> 4</span><span style="color:#999999">;</span><span style="color:#A0ADA0"> // De waarde van rest wordt 1</span></span><span class="line" data-line="2"></span></code></pre>
 <div class="clear-float"></div></div><h1 id="fontawesome-iconen" tabindex="-1">Fontawesome iconen</h1>
 <p>Het is mogelijk om iconen uit de fontawesome bibliotheek toe te voegen.</p>
 <p>De link <a href="https://fontawesome.com/search?ic=free-collection" target="_blank">font awesome</a>
@@ -335,37 +285,27 @@ zijn beschikbaar. De PRO iconen dus niet.</p>
 </table>
 <h1 id="signaaltekst" tabindex="-1">Signaaltekst</h1>
 <p>Je kan teksten als volg accentueren.</p>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">>[</span><span style="color:#B56959">!belangrijk</span><span style="color:#999999">]</span></span>
-<span class="line" data-line="2"><span style="color:#999999">></span><span style="color:#2E808F">Belangrijk ....</span></span>
-<span class="line" data-line="3"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">>[</span><span style="color:#B56959">!belangrijk</span><span style="color:#999999">]</span></span><span class="line" data-line="2"><span style="color:#999999">></span><span style="color:#2E808F">Belangrijk ....</span></span><span class="line" data-line="3"></span></code></pre>
 <div class="markdown-alert markdown-alert-belangrijk">
 <p class="markdown-alert-title">Belangrijk</p>
 <p>Belangrijk ....</p>
 </div>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">>[</span><span style="color:#B56959">!notitie</span><span style="color:#999999">]</span></span>
-<span class="line" data-line="2"><span style="color:#999999">></span><span style="color:#2E808F">Notitie ...</span></span>
-<span class="line" data-line="3"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">>[</span><span style="color:#B56959">!notitie</span><span style="color:#999999">]</span></span><span class="line" data-line="2"><span style="color:#999999">></span><span style="color:#2E808F">Notitie ...</span></span><span class="line" data-line="3"></span></code></pre>
 <div class="markdown-alert markdown-alert-notitie">
 <p class="markdown-alert-title">Notitie</p>
 <p>Notitie ...</p>
 </div>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">>[</span><span style="color:#B56959">!tip</span><span style="color:#999999">]</span></span>
-<span class="line" data-line="2"><span style="color:#999999">></span><span style="color:#2E808F">Tip ...</span></span>
-<span class="line" data-line="3"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">>[</span><span style="color:#B56959">!tip</span><span style="color:#999999">]</span></span><span class="line" data-line="2"><span style="color:#999999">></span><span style="color:#2E808F">Tip ...</span></span><span class="line" data-line="3"></span></code></pre>
 <div class="markdown-alert markdown-alert-tip">
 <p class="markdown-alert-title">Tip</p>
 <p>Tip ...</p>
 </div>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">>[</span><span style="color:#B56959">!waarschuwing</span><span style="color:#999999">]</span></span>
-<span class="line" data-line="2"><span style="color:#999999">></span><span style="color:#2E808F">Waarschuwing ...</span></span>
-<span class="line" data-line="3"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">>[</span><span style="color:#B56959">!waarschuwing</span><span style="color:#999999">]</span></span><span class="line" data-line="2"><span style="color:#999999">></span><span style="color:#2E808F">Waarschuwing ...</span></span><span class="line" data-line="3"></span></code></pre>
 <div class="markdown-alert markdown-alert-waarschuwing">
 <p class="markdown-alert-title">Waarschuwing</p>
 <p>Waarschuwing ...</p>
 </div>
-<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">>[</span><span style="color:#B56959">!voorzichtig</span><span style="color:#999999">]</span></span>
-<span class="line" data-line="2"><span style="color:#999999">></span><span style="color:#2E808F">Voorzichtig ...</span></span>
-<span class="line" data-line="3"></span></code></pre>
+<pre class="shiki vitesse-light" style="background-color:#ffffff;color:#393a34" tabindex="0"><code><span class="line" data-line="1"><span style="color:#999999">>[</span><span style="color:#B56959">!voorzichtig</span><span style="color:#999999">]</span></span><span class="line" data-line="2"><span style="color:#999999">></span><span style="color:#2E808F">Voorzichtig ...</span></span><span class="line" data-line="3"></span></code></pre>
 <div class="markdown-alert markdown-alert-voorzichtig">
 <p class="markdown-alert-title">Voorzichtig</p>
 <p>Voorzichtig ...</p>
@@ -470,7 +410,7 @@ zijn beschikbaar. De PRO iconen dus niet.</p>
         style: 'scratch3',
         inline: false,
         languages: ['nl'],
-        scale: 0.6,
+        scale: 0.8,
         inline: true,
       });
 
