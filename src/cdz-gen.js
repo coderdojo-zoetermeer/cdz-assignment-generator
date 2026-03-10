@@ -4,6 +4,7 @@ import { program, Option } from 'commander';
 import fs from 'fs';
 import Handlebars from 'handlebars';
 import { execSync } from 'child_process';
+import * as gulpfile from '../gulpfile.js';
 
 program
   .name('cdz-gen')
@@ -28,12 +29,13 @@ program
       ' Also starts a local server to serve the generated files.',
   )
   .action(async (args) => {
-    execSync(
-      `npx gulp -LLL server -p ${args.port} ${!args.browserOpen ? '-n' : ''}`,
-      {
-        stdio: 'inherit',
-      },
-    );
+    await gulpfile.server();
+    // execSync(
+    //   `npx gulp -LLL server -p ${args.port} ${!args.browserOpen ? '-n' : ''}`,
+    //   {
+    //     stdio: 'inherit',
+    //   },
+    // );
   });
 
 program
