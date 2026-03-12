@@ -94,10 +94,6 @@ end
 zeg [ik hoor niet bij als]
 ```
 
->[!belangrijk]
->Het is belangrijk dat je bij het programmeren goed oplet op het inspringen. Als
->je dit niet goed doet, werkt je programma niet.
-
 :::
 
 <!-- #endregion indent -->

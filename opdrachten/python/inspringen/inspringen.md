@@ -2,7 +2,7 @@
 title: Inspringen
 acknowledgements:
   author(s): Ben Mens
-level: 1
+level: 3
 template: default
 progLang: python
 theme: python
@@ -30,9 +30,11 @@ In deze oefening gaan we oefenen met inspringen in Python.
 
 :::
 
+________________________________________________________________________________
+
 <!-- @include: global-lib/explain-structure.md#indent -->
 
-********************************************************************************
+________________________________________________________________________________
 
 :::: program
 
@@ -67,6 +69,8 @@ niets van het programma snapt en een foutmelding geeft.
 
 Probeer nu zelf om het programma te verbeteren zodat het resultaat als volgt is:
 
+::: codeblock
+
 ```txt
 Het programma begint
 De waarde van antwoord is 42
@@ -75,6 +79,8 @@ Het antwoord gelijk is aan 42
 Het antwoord gelijk is nog steeds 42
 Het programma is klaar
 ```
+
+:::
 
 ::::
 
@@ -95,12 +101,16 @@ antwoord = 41 # [!code ++]
 
 Als je je programma nu test moet het resultaat als volgt zijn:
 
+::: codeblock
+
 ```txt
 Het programma begint
 De waarde van antwoord is 41
 Het antwoord gelijk is aan 41
 Het programma is klaar
 ```
+
+:::
 
 Klopt je programma nog steeds? Zo niet, verbeter je programma dan.
 
@@ -147,7 +157,11 @@ else:
 print("x is iets anders")
 ```
 
+:::
+
 Als het goed is geeft je programma nu het volgende resultaat:
+
+::: codeblock
 
 ```txt
 x is groter dan 100 en kleiner dan 200
