@@ -466,3 +466,29 @@ pre button.copy-button {
     }
   }
 }
+
+.selected-sprite {
+  right: -2px;
+  top: -15px;
+  position: relative;
+  float: right;
+  border-radius: 3px;
+  padding: 3px;
+  box-shadow: 0px 0px 0px 4px hsla(260, 60%, 60%, 0.35);
+  border: 2px solid hsla(260, 60%, 60%, 1);
+  background: hsla(0, 100%, 100%, 1);
+  width: 30px;
+}
+
+.sb3-comment-label {
+  font-size: 15px;
+}
+
+.sb3-comment-label {
+  fill: #000 !important;
+  /* font-size: 15px; */
+}
+
+.sb3-comment-line {
+  fill: #000 !important;
+}

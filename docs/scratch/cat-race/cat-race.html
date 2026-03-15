@@ -146,19 +146,40 @@
 naar de overkant te laten lopen.</p>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>begin van de opdracht</em></p>
-<p>Ga naar de Kat-sprite en maak de kat kleiner. Zet de grootte op 50.</p>
-<p><img src="./assets/size-to-50.svg" alt="" width="400"></p>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
+<p>Ga naar de
+<img src="./assets/cat.svg" alt="" width="12">-sprite en maak de kat kleiner. Zet de grootte
+op 50.</p>
+</div>
+<div>
+<p><img src="./assets/size-to-50.svg" alt="" width="250"></p>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>Zet kat links</em></p>
-<p>Als het spelletje start (Groene vlag) moet de kat links van het scherm staan.
-Gebruik de onderstaande code blokken om dit mogelijk te maken.</p>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
+<p>Als het spelletje start (<img src="./assets/flag.svg" alt="" width="12">) moet de kat
+links van het scherm staan. Gebruik de codeblokken hiernaast om dit mogelijk
+te maken.</p>
+</div>
+<div>
 <pre class="scratchblocks">Wanneer groene vlag wordt aangeklikt
 maak x (-200)
 </pre>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="read">
 <p><em>Uitleg x-as</em></p>
@@ -171,15 +192,32 @@ maak x (-200)
 <p><img src="./global-lib-assets/x-as.drawio.svg" alt="" width="600"></p>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>De kat laten bewegen</em></p>
 <p>We willen de kat iedere keer een stukje naar voren laten bewegen als we op de
-spatiebalk drukken, dit kunnen we met de volgende extra code blokken.</p>
-<p>Voeg de code die in het rode rechthoek staat toe aan de code
+spatiebalk drukken, dit kunnen we met de volgende extra codeblokken.</p>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
+<p>Voeg de blokken die hiernaast staat aangewezen toe aan de code
 van <img src="./assets/cat.svg" alt="" width="12">.</p>
-<p><img src="./assets/take-10-steps.svg" alt="" width="400"></p>
-<p><img src="./assets/start-flag.svg" alt="" width="400" class="float-right">
-Probeer het uit:</p>
+</div>
+<div>
+<pre class="scratchblocks">wanneer groene vlag wordt aangeklikt
+maak x (-200)
+
+wanneer [spatiebalk v] is ingedrukt // ++++++
+neem (10) stappen // ++++++
+
+</pre>
+</div>
+</div>
+<div style="display:flex;column-gap:2.5rem">
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+<div>
+<p>Probeer het uit:</p>
 <ul>
 <li>Start het programma door op de groene vlag te klikken.</li>
 <li>Druk een paar keer op de spatiebalk.</li>
@@ -187,6 +225,11 @@ Probeer het uit:</p>
 <li>Houd de spatiebalk ingedrukt.</li>
 </ul>
 <p>Snap je hoe het werkt?</p>
+</div>
+<div>
+<p><img src="./assets/start-flag.svg" alt="" width="280"></p>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="read">
 <p><img src="./global-lib-assets/events.svg" alt="" width="200" class="float-right">
@@ -212,39 +255,84 @@ blok in je programma kan starten.</p>
 gebeurtenissen zoals je in het plaatje hiernaast kunt zien.</p>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>Niet vals spelen!</em></p>
-<p><img src="./assets/wait-for-release-spacekey.svg" alt="" width="300" class="float-right">
-Om te voorkomen dat je makkelijk aan de overkant komt, willen we wachten nadat
+<p>Om te voorkomen dat je makkelijk aan de overkant komt, willen we wachten nadat
 de spatiebalk is ingedrukt, dat hij eerst weer is los gelaten.</p>
-<p>Pas de code van <img src="./assets/cat.svg" alt="" width="12"> aan zoals hiernaast is in de
-rode rechthoek is weergegeven.</p>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
+<p>Pas de code van <img src="./assets/cat.svg" alt="" width="12"> aan zoals hiernaast
+is weergegeven.</p>
+</div>
+<div>
+<pre class="scratchblocks">wanneer [spatiebalk v] is ingedrukt
+neem (10) stappen
+wacht tot &lt;niet &lt;toets (spatiebalk v) ingedrukt&gt;&gt; // ++++++
+</pre>
+</div>
+</div>
 <p><div class="clear-float"></div></p>
+<div class="markdown-alert markdown-alert-tip">
+<p class="markdown-alert-title">Tip</p>
 <p>Kijk goed naar de kleuren!</p>
 <p>Je moet de blokken in elkaar schuiven!</p>
 <ul>
 <li>Het blok <code class="scratch">wacht tot &lt;&gt;</code> vind je in de <code>Besturen</code> lijst</li>
 <li>Het blok <code class="scratch">niet &lt;&gt;</code> vind je in de <code>Functies</code> lijst</li>
-<li>Het blok <code class="scratch">toets [spatiebalk v] ingedrukt?</code> vind je in de <code>Waarnemen</code> lijst</li>
+<li>Het blok <code class="scratch">toets [spatiebalk v] ingedrukt?</code> vind je in
+de <code>Waarnemen</code> lijst</li>
 </ul>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>Een finishlijn toevoegen</em></p>
+<p><div class="clear-float"></div></p>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
 <p>Maak een nieuwe Sprite (plaatje) aan en teken hier een finishlijn in.</p>
-<p><img src="./assets/draw-sprite.svg" alt="" width="200">
-<img src="./assets/finishline.png" alt="" width="200"></p>
+</div>
+<div>
+<p><img src="./assets/teken-sprite.png" alt="" width="50"></p>
+</div>
+<div>
+<p><img src="./assets/finishline.png" alt="" width="200"></p>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>Spel laten stoppen als kat bij de finish is</em></p>
-<p><img src="./assets/stop-at-finish.svg" alt="" width="300" class="float-right">
-Als de kat nu bij de finish lijn komt moet ons spel stoppen. Dit kan je met de
+<!-- ![stop-at-finish =300x](./assets/stop-at-finish.svg) -->
+<p>Als de kat nu bij de finish lijn komt moet ons spel stoppen. Dit kan je met de
 volgende code blokken doen.</p>
-<p>Voeg deze codeblokken toe aan <img src="./assets/cat.svg" alt="" width="12"></p>
-<p>Dit zorgt ervoor dat <img src="./assets/cat.svg" alt="" width="12"> &quot;Ik ben er!!!&quot;&quot; zegt als hij
+<div style="display:flex;gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
+<p>Voeg de codeblokken toe aan <img src="./assets/cat.svg" alt="" width="12"></p>
+<p>Dit zorgt ervoor dat <img src="./assets/cat.svg" alt="" width="12"> <code>Ik ben er!!!</code> zegt als hij
 <code>Sprite 2</code> raakt. <code>Sprite 2</code> is de sprite voor de
 finishlijn.</p>
+</div>
+<div>
+<pre class="scratchblocks">wanneer [spatiebalk v] is ingedrukt
+neem (10) stappen
+wacht tot &lt;niet &lt;toets (spatiebalk v) ingedrukt&gt;&gt;
+als &lt;raak ik (sprite2 v) ?&gt; dan // ++++++
+  zeg [ik ben er!!!] (2) sec. // ++++++
+  stop [alle v] // ++++++
+end
+</pre>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="read">
 <p><em>uitleg variabelen</em></p>
@@ -252,60 +340,176 @@ finishlijn.</p>
 variabele is een plekje in het geheugen van de computer waarin je een waarde kan
 bewaren. Bijvoorbeeld de score of de uitkomst van een som.</p>
 <p><em>Maken van een variabele</em></p>
+<div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:2.5rem">
+<div style="grid-column:span 1 / span 1">
+<p><i class="fa-caret-right fa-solid" style="font-size:30px"></i></p>
+</div>
+<div style="grid-column:span 5 / span 5">
 <p>Om een variabele te kunnen gebruiken, moet je hem eerst maken. Dit doe je door
 op maak variabele te klikken.</p>
+</div>
+<div style="grid-column:span 6 / span 6">
 <p><img src="./global-lib-assets/maak-variabele.svg" alt="" width="200"></p>
+</div>
+<div style="grid-column:span 1 / span 1">
+<p><i class="fa-caret-right fa-solid" style="font-size:30px"></i></p>
+</div>
+<div style="grid-column:span 5 / span 5">
 <p>Je krijgt nu een formulier waarin je de variabele een naam kan geven. In dit
 voorbeeld <code>score</code>.</p>
+</div>
+<div style="grid-column:span 6 / span 6">
 <p><img src="./global-lib-assets/maak-variabele1.svg" alt="" width="200"></p>
+</div>
+</div>
 <p><em>Gebruiken van een variabele</em></p>
 <p>Je krijgt nu een nieuwe bouwsteen die je kan gebruiken in je programma.</p>
 <p><img src="./global-lib-assets/maak-variabele2.svg" alt="" height="75">
 <img src="./global-lib-assets/gebruik-variabele.svg" alt="" height="100"></p>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>Maken variabele voor het bijhouden van de tijd</em></p>
-<p>Dit is een Race! dus moeten we de tijd bij gaan houden hoelang de kat erover
-doet.</p>
+<p>Dit is een Race! dus moeten we de tijd bij gaan houden hoelang
+<img src="./assets/cat.svg" alt="" width="12"> erover doet.</p>
 <p>We hebben hiervoor een variabele nodig met de naam <code>tijd</code>. In de
 uitleg over variabelen staat hoe dit moet.</p>
+<div style="display:flex;column-gap:2.5rem">
+<div style="grid-column:span 1 / span 1">
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div style="grid-column:span 5 / span 5">
 <p>Maak nu zelf een variabele met de naam tijd.</p>
+</div>
+<div style="grid-column:span 6 / span 6">
 <p><img src="./assets/variabele-tijd.svg" alt="" height="150"></p>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>De tijd bijhouden</em></p>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
 <p>Nu moeten we er eerst voor zorgen dat de tijd op nul wordt gezet als je het
 programma start.</p>
-<p><img src="./assets/reset-time.svg" alt="" height="150"></p>
+</div>
+<div>
+<pre class="scratchblocks">wanneer groene vlag wordt aangeklikt
+maak x (-200)
+maak [tijd v] (0) // +++++
+</pre>
+</div>
+</div>
+<div style="display:flex">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
 <p>Zorg er nu voor dat de variable <code>tijd</code> elke seconde met 1 wordt
 verhoogt.</p>
-<p><img src="./assets/count-seconds.svg" alt="" height="200"></p>
+</div>
+<div>
+<pre class="scratchblocks">wanneer groene vlag wordt aangeklikt
+maak x (-200)
+maak [tijd v] (0)
+herhaal // +++++
+  wacht (1) sec. // +++++
+  verander [tijd v] met (1) // +++++
+end
+
+</pre>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>Score en tijd laten zien</em></p>
-<p><img src="./assets/say-score.svg" alt="" width="300" class="float-right">
-We gaan er nu voor zorgen dat je de score ziet als <img src="./assets/cat.svg" alt="" width="12">
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
+<p>We gaan er nu voor zorgen dat je de score ziet als <img src="./assets/cat.svg" alt="" width="12">
 bij de finish komt.</p>
 <p>De tijd meten in hele seconden is misschien niet zo leuk. Laten we de tijd
 in 1/10 van een seconde gaan meten.</p>
 <p>We willen dus de variabele tijd niet 1x per seconde verhogen, maar 10x
-per seconden</p>
-<p>Pas de code aan zoals hiernaast is weergegeven.</p>
+per seconde. Pas de code aan zoals hiernaast is weergegeven.</p>
+</div>
+<div>
+<pre class="scratchblocks">wanneer groene vlag wordt aangeklikt
+maak x (-200)
+maak [tijd v] (0)
+herhaal 
+  wacht (0.1) sec. // &lt; aanpassen
+  verander [tijd v] met (1)
+end
+
+</pre>
+</div>
+</div>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
+<p>Als <img src="./assets/cat.svg" alt="" width="12"> bij de finish komt moet hij zijn tijd zeggen.</p>
+</div>
+<div>
+<pre class="scratchblocks">wanneer [spatiebalk v] is ingedrukt
+neem (10) stappen
+wacht tot &lt;niet &lt;toets (spatiebalk v) ingedrukt&gt;&gt;
+als &lt;raak ik (sprite2 v) ?&gt; dan 
+  zeg (voeg [mijn tijd is] en (tijd) samen) (2) sec. // &lt; aanpassen
+  stop [alle v]
+end
+</pre>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
-<em>Hindernissen 1</em></p>
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
+<em>Hindernissen</em></p>
 <p>Laten we het wat moeilijker maken en een hindernis op de weg van de kat zetten.</p>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
 <p>Dit kan je doen door Kies een sprite. Kies een leuk plaatje uit en
 maak het plaatje ook weer wat kleiner, bijvoorbeeld weer grootte 50</p>
+</div>
+<div>
 <p><img src="./assets/banaan.svg" alt="" width="400"></p>
+</div>
+</div>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
 <p>Nu moeten we ervoor zorgen dat als <img src="./assets/cat.svg" alt="" width="12"> de hindernis
 aanraakt (de bananen) dat de kat weer terug word gezet aan het begin van het
 spel. Dat kan je met de volgende commando blokken doen</p>
-<p><img src="./assets/hit-banannas.svg" alt="" width="300"></p>
+</div>
+<div>
+<pre class="scratchblocks">wanneer [spatiebalk v] is ingedrukt
+neem (10) stappen
+wacht tot &lt;niet &lt;toets (spatiebalk v) ingedrukt&gt;&gt;
+als &lt;raak ik (sprite2 v) ?&gt; dan
+  zeg (voeg [mijn tijd is] en (tijd) samen) (2) sec.
+  stop [alle v]
+end
+als &lt;raak ik (bananas v)?&gt; dan //+++++
+  maak x (200) //+++++
+end
+</pre>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="read">
 <p><em>Uitleg y-as</em></p>
@@ -318,42 +522,94 @@ Y wijst de plek van boven naar beneden op het scherm.</p>
 </ul>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>Omhoog bewegen</em></p>
 <p>Nu moeten we het wel mogelijk maken voor de kat om de hindernis te ontwijken.
 Dit kunnen we doen door de kat omhoog en omlaag te laten gaan. Gebruik pijltje
 omhoog om de kat om hoog te laten gaan. De Y Positie van de kat bepaald hoe
 hoog de kat staat.</p>
-<pre class="scratchblocks">wanneer [pijltje omhoog v] is ingedrukt
-verander y met (10)
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
+<p>Maak de blokken hiernaast</p>
+</div>
+<div>
+<pre class="scratchblocks">wanneer [pijltje omhoog v] is ingedrukt // +++++
+verander y met (10) //  +++++
 </pre>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>Omlaag bewegen</em></p>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
 <p>Maak zelf een blok om de kat omlaag te laten bewegen als op pijltje omlaag
 wordt gedrukt.</p>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="program">
-<p><img src="./assets/cat.svg" alt="" width="50" class="float-right">
+<p><img src="./assets/cat.svg" alt="" class="selected-sprite">
 <em>Y positie op 0 zetten bij het begin</em></p>
 <p>Als het spel begint moet <img src="./assets/cat.svg" alt="" width="12"> op y-positie 0 staan.</p>
-<p>Voeg het onderstaande blok toe aan je programma. Je moet zelf bepalen waar hij
-moet komen.</p>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
+<p>Voeg het blok dat hiernaast staat toe aan je programma. Je moet zelf bepalen
+waar hij moet komen.</p>
+</div>
+<div>
 <pre class="scratchblocks">maak y (0)
 </pre>
+</div>
+</div>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
 <p>Speel het spel en kijk of alles werkt.</p>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="challenge">
 <p><em>Extra hindernissen</em></p>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
 <p><img src="./assets/meer-hindernissen.png" alt="" width="200" class="float-right">
 Maak meerdere hindernissen door rotsen toe te voegen.</p>
+</div>
+</div>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
 <p>Zorg er voor dat als de kat tegen
 de hindernissen aanloopt hij altijd
 weer terug links word geplaatst!</p>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="challenge">
 <p><em>Langzamer lopen</em></p>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
 <p>Laat de kat langzamer lopen, dus dat je nog veel vaker op de spatiebalk moet
 drukken om bij de finish te komen.</p>
 <ul>
@@ -361,14 +617,24 @@ drukken om bij de finish te komen.</p>
 <li>Moet je het aantal stappen hoger of lager maken om de kat langzamer
 te laten lopen?</li>
 </ul>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="challenge">
 <p><em>Twee spelers</em></p>
 <p>Kan je dit een 2-speler spel maken?</p>
-<ul>
-<li>Maak naast de kat een andere speler in je spel</li>
-<li>Kopieer de code van de kat naar de andere speler</li>
-</ul>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
+<p>Maak naast de kat een andere speler in je spel.
+Kopieer de code van de kat naar de andere speler.</p>
+</div>
+</div>
+<div style="display:flex;column-gap:1.25rem">
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+<div>
 <p>Verander de toetsen voor de spelers</p>
 <ul>
 <li>
@@ -387,10 +653,17 @@ te laten lopen?</li>
 <li>Omlaag: M</li>
 </ul>
 </li>
-<li>
-<p>Als de 2 spelers elkaar aanraken, zet dan beide spelers terug aan het begin!</p>
-</li>
 </ul>
+</div>
+</div>
+<div style="display:flex;column-gap:1.25rem">
+<div>
+<p><i class="fa-regular fa-hand-point-right" style="font-size:30px"></i></p>
+</div>
+<div>
+<p>Als de 2 spelers elkaar aanraken, zet dan beide spelers terug aan het begin!</p>
+</div>
+</div>
 <div class="clear-float"></div></div><hr class="separator-hidden">
 <div class="read">
 <p><em>Voorbeeld spel programma</em></p>
@@ -461,6 +734,7 @@ te laten lopen?</li>
                 <div class="acknowledgements">
                   <em>Acknowledgements</em>
                   <div style="padding-left: 20px;">
+                      <p>Author(s): CoderDojo Zoetermeer</p>
                   </div>
                 </div>
               </div>

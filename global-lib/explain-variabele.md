@@ -10,15 +10,35 @@ bewaren. Bijvoorbeeld de score of de uitkomst van een som.
 
 *Maken van een variabele*
 
+@grids grid-cols-12 gap-x-10
+
+@grid col-span-1
+
+::caret-right =30::
+
+@grid col-span-5
+
 Om een variabele te kunnen gebruiken, moet je hem eerst maken. Dit doe je door
 op maak variabele te klikken.
 
+@grid col-span-6
+
 ![maak variabele =200x](./global-lib-assets/maak-variabele.svg)
+
+@grid col-span-1
+
+::caret-right =30::
+
+@grid col-span-5
 
 Je krijgt nu een formulier waarin je de variabele een naam kan geven. In dit
 voorbeeld `score`.
 
+@grid col-span-6
+
 ![maak variabele1 =200x](./global-lib-assets/maak-variabele1.svg)
+
+@end
 
 *Gebruiken van een variabele*
 

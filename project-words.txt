@@ -1,9 +1,11 @@
 arduino
 coderdojo
 enspace
+flexs
 fontawesome
 gulpfile
 gulplog
+hsla
 katex
 mdit
 pagebreak
